@@ -1,0 +1,67 @@
+
+resources\plugins\ases\ia32\win32\lsx-ases.dll:     file format pei-i386
+
+
+Disassembly of section .text:
+
+100d4ad0 <.text+0xd3ad0>:
+100d4ad0:	a8 fe                	test   al,0xfe
+100d4ad2:	ff                   	(bad)
+100d4ad3:	ff c6                	inc    esi
+100d4ad5:	45                   	inc    ebp
+100d4ad6:	fc                   	cld
+100d4ad7:	03 8b 16 8b ce 50    	add    ecx,DWORD PTR [ebx+0x50ce8b16]
+100d4add:	8d 47 04             	lea    eax,[edi+0x4]
+100d4ae0:	50                   	push   eax
+100d4ae1:	8d 85 c0 fe ff ff    	lea    eax,[ebp-0x140]
+100d4ae7:	50                   	push   eax
+100d4ae8:	ff 52 10             	call   DWORD PTR [edx+0x10]
+100d4aeb:	8d 8d c0 fe ff ff    	lea    ecx,[ebp-0x140]
+100d4af1:	e8 ea 70 f4 ff       	call   0x1001bbe0
+100d4af6:	8d 8d a8 fe ff ff    	lea    ecx,[ebp-0x158]
+100d4afc:	c7 45 fc ff ff ff ff 	mov    DWORD PTR [ebp-0x4],0xffffffff
+100d4b03:	e8 d8 70 f4 ff       	call   0x1001bbe0
+100d4b08:	6a 2b                	push   0x2b
+100d4b0a:	68 54 58 3f 10       	push   0x103f5854 ; 0x103f5854 'Scaling factor for acoustic log-likelihoods'
+100d4b0f:	8d 8d a8 fe ff ff    	lea    ecx,[ebp-0x158]
+100d4b15:	c7 85 b8 fe ff ff 00 	mov    DWORD PTR [ebp-0x148],0x0
+100d4b1c:	00 00 00 
+100d4b1f:	c7 85 bc fe ff ff 0f 	mov    DWORD PTR [ebp-0x144],0xf
+100d4b26:	00 00 00 
+100d4b29:	c6 85 a8 fe ff ff 00 	mov    BYTE PTR [ebp-0x158],0x0
+100d4b30:	e8 4b 71 f4 ff       	call   0x1001bc80
+100d4b35:	c7 45 fc 04 00 00 00 	mov    DWORD PTR [ebp-0x4],0x4
+100d4b3c:	8d 8d c0 fe ff ff    	lea    ecx,[ebp-0x140]
+100d4b42:	6a 0e                	push   0xe
+100d4b44:	68 44 58 3f 10       	push   0x103f5844 ; 0x103f5844 'acoustic-scale'
+100d4b49:	c7 85 d0 fe ff ff 00 	mov    DWORD PTR [ebp-0x130],0x0
+100d4b50:	00 00 00 
+100d4b53:	c7 85 d4 fe ff ff 0f 	mov    DWORD PTR [ebp-0x12c],0xf
+100d4b5a:	00 00 00 
+100d4b5d:	c6 85 c0 fe ff ff 00 	mov    BYTE PTR [ebp-0x140],0x0
+100d4b64:	e8 17 71 f4 ff       	call   0x1001bc80
+100d4b69:	8d 85 a8 fe ff ff    	lea    eax,[ebp-0x158]
+100d4b6f:	c6 45 fc 05          	mov    BYTE PTR [ebp-0x4],0x5
+100d4b73:	8b 16                	mov    edx,DWORD PTR [esi]
+100d4b75:	8b ce                	mov    ecx,esi
+100d4b77:	50                   	push   eax
+100d4b78:	8d 47 0c             	lea    eax,[edi+0xc]
+100d4b7b:	50                   	push   eax
+100d4b7c:	8d 85 c0 fe ff ff    	lea    eax,[ebp-0x140]
+100d4b82:	50                   	push   eax
+100d4b83:	ff 52 08             	call   DWORD PTR [edx+0x8]
+100d4b86:	8d 8d c0 fe ff ff    	lea    ecx,[ebp-0x140]
+100d4b8c:	e8 4f 70 f4 ff       	call   0x1001bbe0
+100d4b91:	8d 8d a8 fe ff ff    	lea    ecx,[ebp-0x158]
+100d4b97:	c7 45 fc ff ff ff ff 	mov    DWORD PTR [ebp-0x4],0xffffffff
+100d4b9e:	e8 3d 70 f4 ff       	call   0x1001bbe0
+100d4ba3:	68 f2 00 00 00       	push   0xf2
+100d4ba8:	68 50 57 3f 10       	push   0x103f5750 ; 0x103f5750 'Number of frames in each chunk that is separately evaluated by the neural net.  Measured before any subsampling, if the --frame-subsampling-factor options is used (i.e. counts input frames.  This is only advisory (may be rounded up if needed.'
+100d4bad:	8d 8d a8 fe ff ff    	lea    ecx,[ebp-0x158]
+100d4bb3:	c7 85 b8 fe ff ff 00 	mov    DWORD PTR [ebp-0x148],0x0
+100d4bba:	00 00 00 
+100d4bbd:	c7 85 bc fe ff ff 0f 	mov    DWORD PTR [ebp-0x144],0xf
+100d4bc4:	00 00 00 
+100d4bc7:	c6 85 a8 fe ff ff 00 	mov    BYTE PTR [ebp-0x158],0x0
+100d4bce:	e8                   	.byte 0xe8
+100d4bcf:	ad                   	lods   eax,DWORD PTR ds:[esi]

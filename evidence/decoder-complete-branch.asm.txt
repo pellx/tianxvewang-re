@@ -1,0 +1,108 @@
+
+resources\plugins\ases\ia32\win32\lsx-ases.dll:     file format pei-i386
+
+
+Disassembly of section .text:
+
+1009be40 <.text+0x9ae40>:
+1009be40:	1c 8b                	sbb    al,0x8b
+1009be42:	4f                   	dec    edi
+1009be43:	0c 85                	or     al,0x85
+1009be45:	c9                   	leave
+1009be46:	74 05                	je     0x1009be4d
+1009be48:	8b 01                	mov    eax,DWORD PTR [ecx]
+1009be4a:	ff 50 1c             	call   DWORD PTR [eax+0x1c]
+1009be4d:	8b 4e 08             	mov    ecx,DWORD PTR [esi+0x8]
+1009be50:	8b 01                	mov    eax,DWORD PTR [ecx]
+1009be52:	ff 10                	call   DWORD PTR [eax]
+1009be54:	8b 4e 08             	mov    ecx,DWORD PTR [esi+0x8]
+1009be57:	8b 01                	mov    eax,DWORD PTR [ecx]
+1009be59:	ff 50 04             	call   DWORD PTR [eax+0x4]
+1009be5c:	c7 45 fc 03 00 00 00 	mov    DWORD PTR [ebp-0x4],0x3
+1009be63:	8b 4e 08             	mov    ecx,DWORD PTR [esi+0x8]
+1009be66:	8b 01                	mov    eax,DWORD PTR [ecx]
+1009be68:	ff 50 08             	call   DWORD PTR [eax+0x8]
+1009be6b:	85 c0                	test   eax,eax
+1009be6d:	75 0f                	jne    0x1009be7e
+1009be6f:	8d 4d b8             	lea    ecx,[ebp-0x48]
+1009be72:	e8 69 fd f7 ff       	call   0x1001bbe0
+1009be77:	33 c0                	xor    eax,eax
+1009be79:	e9 d3 00 00 00       	jmp    0x1009bf51
+1009be7e:	83 7e 0c 00          	cmp    DWORD PTR [esi+0xc],0x0
+1009be82:	8b ce                	mov    ecx,esi
+1009be84:	0f 85 e3 00 00 00    	jne    0x1009bf6d
+1009be8a:	c6 45 fc 11          	mov    BYTE PTR [ebp-0x4],0x11
+1009be8e:	e8 5d 08 00 00       	call   0x1009c6f0
+1009be93:	e9 de 00 00 00       	jmp    0x1009bf76
+1009be98:	68 9d 01 00 00       	push   0x19d
+1009be9d:	68 a4 1c 3f 10       	push   0x103f1ca4 ; 0x103f1ca4 '[构建目录]\\polly\\tags\\v4.4.2\\src\\decoder\\decoder.cc'
+1009bea2:	68 9c 1e 3f 10       	push   0x103f1e9c ; 0x103f1e9c 'polly::Decoder::CompleteDecode'
+1009bea7:	6a ff                	push   0xffffffff
+1009bea9:	8d 8d cc fe ff ff    	lea    ecx,[ebp-0x134]
+1009beaf:	c6 45 fc 13          	mov    BYTE PTR [ebp-0x4],0x13
+1009beb3:	e8 58 e3 fa ff       	call   0x1004a210
+1009beb8:	68 e8 1d 3f 10       	push   0x103f1de8 ; 0x103f1de8 ' DecodePostProcessingA failed.'
+1009bebd:	68 10 56 3a 10       	push   0x103a5610
+1009bec2:	6a 09                	push   0x9
+1009bec4:	68 bc 1d 3f 10       	push   0x103f1dbc ; 0x103f1dbc 'CompleteDecode [err_code='
+1009bec9:	68 bc 53 3a 10       	push   0x103a53bc
+1009bece:	68 30 1c 3f 10       	push   0x103f1c30 ; 0x103f1c30 'DECODER'
+1009bed3:	83 c0 10             	add    eax,0x10
+1009bed6:	c6 45 fc 14          	mov    BYTE PTR [ebp-0x4],0x14
+1009beda:	68 c8 53 3a 10       	push   0x103a53c8
+1009bedf:	50                   	push   eax
+1009bee0:	e8 0b e3 f8 ff       	call   0x1002a1f0
+1009bee5:	83 c4 08             	add    esp,0x8
+1009bee8:	50                   	push   eax
+1009bee9:	e8 02 e3 f8 ff       	call   0x1002a1f0
+1009beee:	83 c4 08             	add    esp,0x8
+1009bef1:	50                   	push   eax
+1009bef2:	e8 f9 e2 f8 ff       	call   0x1002a1f0
+1009bef7:	83 c4 08             	add    esp,0x8
+1009befa:	50                   	push   eax
+1009befb:	e8 f0 e2 f8 ff       	call   0x1002a1f0
+1009bf00:	83 c4 08             	add    esp,0x8
+1009bf03:	8b c8                	mov    ecx,eax
+1009bf05:	e8 46 9a f8 ff       	call   0x10025950
+1009bf0a:	50                   	push   eax
+1009bf0b:	e8 e0 e2 f8 ff       	call   0x1002a1f0
+1009bf10:	83 c4 08             	add    esp,0x8
+1009bf13:	50                   	push   eax
+1009bf14:	e8 d7 e2 f8 ff       	call   0x1002a1f0
+1009bf19:	83 c4 08             	add    esp,0x8
+1009bf1c:	c6 45 fc 13          	mov    BYTE PTR [ebp-0x4],0x13
+1009bf20:	8d 8d cc fe ff ff    	lea    ecx,[ebp-0x134]
+1009bf26:	e8 15 e4 fa ff       	call   0x1004a340
+1009bf2b:	8d 45 b0             	lea    eax,[ebp-0x50]
+1009bf2e:	c7 45 ac 04 35 39 10 	mov    DWORD PTR [ebp-0x54],0x10393504
+1009bf35:	50                   	push   eax
+1009bf36:	e8 4a dc 27 00       	call   0x10319b85
+1009bf3b:	83 c4 04             	add    esp,0x4
+1009bf3e:	b8 44 bf 09 10       	mov    eax,0x1009bf44
+1009bf43:	c3                   	ret
+1009bf44:	8d 4d b8             	lea    ecx,[ebp-0x48]
+1009bf47:	e8 94 fc f7 ff       	call   0x1001bbe0
+1009bf4c:	b8 09 00 00 00       	mov    eax,0x9
+1009bf51:	8b 4d f4             	mov    ecx,DWORD PTR [ebp-0xc]
+1009bf54:	64 89 0d 00 00 00 00 	mov    DWORD PTR fs:0x0,ecx
+1009bf5b:	59                   	pop    ecx
+1009bf5c:	5f                   	pop    edi
+1009bf5d:	5e                   	pop    esi
+1009bf5e:	5b                   	pop    ebx
+1009bf5f:	8b 4d ec             	mov    ecx,DWORD PTR [ebp-0x14]
+1009bf62:	33 cd                	xor    ecx,ebp
+1009bf64:	e8 c4 c2 27 00       	call   0x1031822d
+1009bf69:	8b e5                	mov    esp,ebp
+1009bf6b:	5d                   	pop    ebp
+1009bf6c:	c3                   	ret
+1009bf6d:	c6 45 fc 15          	mov    BYTE PTR [ebp-0x4],0x15
+1009bf71:	e8 4a 0a 00 00       	call   0x1009c9c0
+1009bf76:	68 aa 01 00 00       	push   0x1aa
+1009bf7b:	68 a4 1c 3f 10       	push   0x103f1ca4 ; 0x103f1ca4 '[构建目录]\\polly\\tags\\v4.4.2\\src\\decoder\\decoder.cc'
+1009bf80:	68 9c 1e 3f 10       	push   0x103f1e9c ; 0x103f1e9c 'polly::Decoder::CompleteDecode'
+1009bf85:	6a 00                	push   0x0
+1009bf87:	8d 8d 24 fe ff ff    	lea    ecx,[ebp-0x1dc]
+1009bf8d:	c7 45 fc 03 00 00 00 	mov    DWORD PTR [ebp-0x4],0x3
+1009bf94:	8b f0                	mov    esi,eax
+1009bf96:	e8 75 e2 fa ff       	call   0x1004a210
+1009bf9b:	68 10 56 3a 10       	push   0x103a5610

@@ -1,0 +1,60 @@
+
+resources\plugins\ases\ia32\win32\lsx-ases.dll:     file format pei-i386
+
+
+Disassembly of section .text:
+
+1009b600 <.text+0x9a600>:
+1009b600:	55                   	push   ebp
+1009b601:	8b ec                	mov    ebp,esp
+1009b603:	6a ff                	push   0xffffffff
+1009b605:	68 cb 5e 36 10       	push   0x10365ecb
+1009b60a:	64 a1 00 00 00 00    	mov    eax,fs:0x0
+1009b610:	50                   	push   eax
+1009b611:	81 ec d4 01 00 00    	sub    esp,0x1d4
+1009b617:	a1 6c 30 46 10       	mov    eax,ds:0x1046306c ; 0x1046306c f32=-0.002943414729088545
+1009b61c:	33 c5                	xor    eax,ebp
+1009b61e:	89 45 ec             	mov    DWORD PTR [ebp-0x14],eax
+1009b621:	53                   	push   ebx
+1009b622:	56                   	push   esi
+1009b623:	57                   	push   edi
+1009b624:	50                   	push   eax
+1009b625:	8d 45 f4             	lea    eax,[ebp-0xc]
+1009b628:	64 a3 00 00 00 00    	mov    fs:0x0,eax
+1009b62e:	89 65 f0             	mov    DWORD PTR [ebp-0x10],esp
+1009b631:	8b f1                	mov    esi,ecx
+1009b633:	6a 01                	push   0x1
+1009b635:	6a 02                	push   0x2
+1009b637:	8d 8d dc fe ff ff    	lea    ecx,[ebp-0x124]
+1009b63d:	89 b5 74 ff ff ff    	mov    DWORD PTR [ebp-0x8c],esi
+1009b643:	e8 68 f0 fa ff       	call   0x1004a6b0
+1009b648:	6a 2f                	push   0x2f
+1009b64a:	68 a4 1c 3f 10       	push   0x103f1ca4 ; 0x103f1ca4 '[构建目录]\\polly\\tags\\v4.4.2\\src\\decoder\\decoder.cc'
+1009b64f:	c7 85 cc fe ff ff 00 	mov    DWORD PTR [ebp-0x134],0x0
+1009b656:	00 00 00 
+1009b659:	c7 85 d0 fe ff ff 9c 	mov    DWORD PTR [ebp-0x130],0x103f1e9c ; 0x103f1e9c 'polly::Decoder::CompleteDecode'
+1009b660:	1e 3f 10 
+1009b663:	e8 28 f3 29 00       	call   0x1033a990
+1009b668:	83 c4 08             	add    esp,0x8
+1009b66b:	85 c0                	test   eax,eax
+1009b66d:	75 07                	jne    0x1009b676
+1009b66f:	b8 a4 1c 3f 10       	mov    eax,0x103f1ca4 ; 0x103f1ca4 '[构建目录]\\polly\\tags\\v4.4.2\\src\\decoder\\decoder.cc'
+1009b674:	eb 18                	jmp    0x1009b68e
+1009b676:	3d a4 1c 3f 10       	cmp    eax,0x103f1ca4 ; 0x103f1ca4 '[构建目录]\\polly\\tags\\v4.4.2\\src\\decoder\\decoder.cc'
+1009b67b:	76 11                	jbe    0x1009b68e
+1009b67d:	0f 1f 00             	nop    DWORD PTR [eax]
+1009b680:	80 78 ff 2f          	cmp    BYTE PTR [eax-0x1],0x2f
+1009b684:	74 08                	je     0x1009b68e
+1009b686:	48                   	dec    eax
+1009b687:	3d a4 1c 3f 10       	cmp    eax,0x103f1ca4 ; 0x103f1ca4 '[构建目录]\\polly\\tags\\v4.4.2\\src\\decoder\\decoder.cc'
+1009b68c:	77 f2                	ja     0x1009b680
+1009b68e:	89 85 d4 fe ff ff    	mov    DWORD PTR [ebp-0x12c],eax
+1009b694:	c7 85 d8 fe ff ff 4f 	mov    DWORD PTR [ebp-0x128],0x14f
+1009b69b:	01 00 00 
+1009b69e:	68 bc 1e 3f 10       	push   0x103f1ebc ; 0x103f1ebc 'CompleteDecode'
+1009b6a3:	68 bc 53 3a 10       	push   0x103a53bc
+1009b6a8:	68 30 1c 3f 10       	push   0x103f1c30 ; 0x103f1c30 'DECODER'
+1009b6ad:	8d 85 dc fe ff ff    	lea    eax,[ebp-0x124]
+1009b6b3:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [ebp-0x4],0x0
+1009b6ba:	68 c8 53 3a 10       	push   0x103a53c8
+1009b6bf:	50                   	push   eax

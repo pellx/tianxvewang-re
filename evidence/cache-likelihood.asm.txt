@@ -1,0 +1,58 @@
+
+resources\plugins\ases\ia32\win32\lsx-ases.dll:     file format pei-i386
+
+
+Disassembly of section .text:
+
+100c8dc0 <.text+0xc7dc0>:
+100c8dc0:	55                   	push   ebp
+100c8dc1:	8b ec                	mov    ebp,esp
+100c8dc3:	56                   	push   esi
+100c8dc4:	8b f1                	mov    esi,ecx
+100c8dc6:	57                   	push   edi
+100c8dc7:	8b 7d 08             	mov    edi,DWORD PTR [ebp+0x8]
+100c8dca:	8b 46 0c             	mov    eax,DWORD PTR [esi+0xc]
+100c8dcd:	8b 4e 24             	mov    ecx,DWORD PTR [esi+0x24]
+100c8dd0:	03 c1                	add    eax,ecx
+100c8dd2:	3b f8                	cmp    edi,eax
+100c8dd4:	7c 13                	jl     0x100c8de9
+100c8dd6:	8b ce                	mov    ecx,esi
+100c8dd8:	e8 73 fb ff ff       	call   0x100c8950
+100c8ddd:	8b 46 0c             	mov    eax,DWORD PTR [esi+0xc]
+100c8de0:	8b 4e 24             	mov    ecx,DWORD PTR [esi+0x24]
+100c8de3:	03 c1                	add    eax,ecx
+100c8de5:	3b f8                	cmp    edi,eax
+100c8de7:	7d ed                	jge    0x100c8dd6
+100c8de9:	8b 86 a4 00 00 00    	mov    eax,DWORD PTR [esi+0xa4]
+100c8def:	2b f9                	sub    edi,ecx
+100c8df1:	0f af 7e 10          	imul   edi,DWORD PTR [esi+0x10]
+100c8df5:	8b 48 48             	mov    ecx,DWORD PTR [eax+0x48]
+100c8df8:	8b 45 0c             	mov    eax,DWORD PTR [ebp+0xc]
+100c8dfb:	03 3c 81             	add    edi,DWORD PTR [ecx+eax*4]
+100c8dfe:	8b 46 04             	mov    eax,DWORD PTR [esi+0x4]
+100c8e01:	d9 04 b8             	fld    DWORD PTR [eax+edi*4]
+100c8e04:	5f                   	pop    edi
+100c8e05:	5e                   	pop    esi
+100c8e06:	5d                   	pop    ebp
+100c8e07:	c2 08 00             	ret    0x8
+100c8e0a:	cc                   	int3
+100c8e0b:	cc                   	int3
+100c8e0c:	cc                   	int3
+100c8e0d:	cc                   	int3
+100c8e0e:	cc                   	int3
+100c8e0f:	cc                   	int3
+100c8e10:	56                   	push   esi
+100c8e11:	8b f1                	mov    esi,ecx
+100c8e13:	8b 06                	mov    eax,DWORD PTR [esi]
+100c8e15:	85 c0                	test   eax,eax
+100c8e17:	74 09                	je     0x100c8e22
+100c8e19:	50                   	push   eax
+100c8e1a:	e8 a3 1e 27 00       	call   0x1033acc2
+100c8e1f:	83 c4 04             	add    esp,0x4
+100c8e22:	c7 06 00 00 00 00    	mov    DWORD PTR [esi],0x0
+100c8e28:	c7 46 08 00 00 00 00 	mov    DWORD PTR [esi+0x8],0x0
+100c8e2f:	c7 46 04 00 00 00 00 	mov    DWORD PTR [esi+0x4],0x0
+100c8e36:	c7 46 0c 00 00 00 00 	mov    DWORD PTR [esi+0xc],0x0
+100c8e3d:	5e                   	pop    esi
+100c8e3e:	c3                   	ret
+100c8e3f:	cc                   	int3

@@ -1,0 +1,230 @@
+
+resources\plugins\ases\ia32\win32\lsx-ases.dll:     file format pei-i386
+
+
+Disassembly of section .text:
+
+100d9380 <.text+0xd8380>:
+100d9380:	00 e8                	add    al,ch
+100d9382:	ca b0 f4             	retf   0xf4b0
+100d9385:	ff                   	(bad)
+100d9386:	3b c7                	cmp    eax,edi
+100d9388:	74 15                	je     0x100d939f
+100d938a:	83 7f 14 10          	cmp    DWORD PTR [edi+0x14],0x10
+100d938e:	8b cf                	mov    ecx,edi
+100d9390:	72 02                	jb     0x100d9394
+100d9392:	8b 0f                	mov    ecx,DWORD PTR [edi]
+100d9394:	ff 77 10             	push   DWORD PTR [edi+0x10]
+100d9397:	51                   	push   ecx
+100d9398:	8b c8                	mov    ecx,eax
+100d939a:	e8 e1 28 f4 ff       	call   0x1001bc80
+100d939f:	8d 4d c4             	lea    ecx,[ebp-0x3c]
+100d93a2:	c7 45 fc ff ff ff ff 	mov    DWORD PTR [ebp-0x4],0xffffffff
+100d93a9:	e8 32 28 f4 ff       	call   0x1001bbe0
+100d93ae:	6a 00                	push   0x0
+100d93b0:	68 99 46 3a 10       	push   0x103a4699 ; 0x103a4699 f32=0.00048828125
+100d93b5:	8d 4d ac             	lea    ecx,[ebp-0x54]
+100d93b8:	c7 45 bc 00 00 00 00 	mov    DWORD PTR [ebp-0x44],0x0
+100d93bf:	c7 45 c0 0f 00 00 00 	mov    DWORD PTR [ebp-0x40],0xf
+100d93c6:	c6 45 ac 00          	mov    BYTE PTR [ebp-0x54],0x0
+100d93ca:	e8 b1 28 f4 ff       	call   0x1001bc80
+100d93cf:	8d 45 ac             	lea    eax,[ebp-0x54]
+100d93d2:	c7 45 fc 02 00 00 00 	mov    DWORD PTR [ebp-0x4],0x2
+100d93d9:	50                   	push   eax
+100d93da:	57                   	push   edi
+100d93db:	8b ce                	mov    ecx,esi
+100d93dd:	e8 9e 86 fa ff       	call   0x10081a80
+100d93e2:	8d 4d ac             	lea    ecx,[ebp-0x54]
+100d93e5:	c7 45 fc ff ff ff ff 	mov    DWORD PTR [ebp-0x4],0xffffffff
+100d93ec:	8b f0                	mov    esi,eax
+100d93ee:	e8 ed 27 f4 ff       	call   0x1001bbe0
+100d93f3:	85 f6                	test   esi,esi
+100d93f5:	74 07                	je     0x100d93fe
+100d93f7:	8b c6                	mov    eax,esi
+100d93f9:	e9 8a 02 00 00       	jmp    0x100d9688
+100d93fe:	0f 57 c0             	xorps  xmm0,xmm0
+100d9401:	68 58 04 00 00       	push   0x458
+100d9406:	66 0f 13 45 e8       	movlpd QWORD PTR [ebp-0x18],xmm0
+100d940b:	e8 2e ee 23 00       	call   0x1031823e
+100d9410:	8b f0                	mov    esi,eax
+100d9412:	89 75 e0             	mov    DWORD PTR [ebp-0x20],esi
+100d9415:	68 58 04 00 00       	push   0x458
+100d941a:	6a 00                	push   0x0
+100d941c:	56                   	push   esi
+100d941d:	c7 45 fc 03 00 00 00 	mov    DWORD PTR [ebp-0x4],0x3
+100d9424:	e8 27 13 24 00       	call   0x1031a750
+100d9429:	83 c4 10             	add    esp,0x10
+100d942c:	8b ce                	mov    ecx,esi
+100d942e:	e8 ed c8 ff ff       	call   0x100d5d20
+100d9433:	c7 45 fc ff ff ff ff 	mov    DWORD PTR [ebp-0x4],0xffffffff
+100d943a:	8d 4d e8             	lea    ecx,[ebp-0x18]
+100d943d:	ff 75 e0             	push   DWORD PTR [ebp-0x20]
+100d9440:	c7 45 e8 00 00 00 00 	mov    DWORD PTR [ebp-0x18],0x0
+100d9447:	50                   	push   eax
+100d9448:	c7 45 ec 00 00 00 00 	mov    DWORD PTR [ebp-0x14],0x0
+100d944f:	e8 bc 0d 00 00       	call   0x100da210
+100d9454:	53                   	push   ebx
+100d9455:	c7 45 fc 04 00 00 00 	mov    DWORD PTR [ebp-0x4],0x4
+100d945c:	57                   	push   edi
+100d945d:	8b 7d e8             	mov    edi,DWORD PTR [ebp-0x18]
+100d9460:	8b cf                	mov    ecx,edi
+100d9462:	e8 e9 f7 ff ff       	call   0x100d8c50
+100d9467:	8b 5d ec             	mov    ebx,DWORD PTR [ebp-0x14]
+100d946a:	83 ce ff             	or     esi,0xffffffff
+100d946d:	89 45 e0             	mov    DWORD PTR [ebp-0x20],eax
+100d9470:	85 c0                	test   eax,eax
+100d9472:	0f 85 62 01 00 00    	jne    0x100d95da
+100d9478:	68 6e 01 00 00       	push   0x16e
+100d947d:	68 d8 62 3f 10       	push   0x103f62d8 ; 0x103f62d8 '[构建目录]\\polly\\tags\\v4.4.2\\src\\model\\model.cc'
+100d9482:	68 cc 67 3f 10       	push   0x103f67cc ; 0x103f67cc 'polly::Model::Initialize'
+100d9487:	6a 00                	push   0x0
+100d9489:	8d 8d 04 ff ff ff    	lea    ecx,[ebp-0xfc]
+100d948f:	81 c7 a8 00 00 00    	add    edi,0xa8
+100d9495:	e8 76 0d f7 ff       	call   0x1004a210
+100d949a:	68 b0 67 3f 10       	push   0x103f67b0 ; 0x103f67b0 'Initialize model_version:'
+100d949f:	68 bc 53 3a 10       	push   0x103a53bc
+100d94a4:	68 0c 63 3f 10       	push   0x103f630c ; 0x103f630c 'MODEL'
+100d94a9:	83 c0 10             	add    eax,0x10
+100d94ac:	c6 45 fc 05          	mov    BYTE PTR [ebp-0x4],0x5
+100d94b0:	68 c8 53 3a 10       	push   0x103a53c8
+100d94b5:	50                   	push   eax
+100d94b6:	e8 35 0d f5 ff       	call   0x1002a1f0
+100d94bb:	83 c4 08             	add    esp,0x8
+100d94be:	50                   	push   eax
+100d94bf:	e8 2c 0d f5 ff       	call   0x1002a1f0
+100d94c4:	83 c4 08             	add    esp,0x8
+100d94c7:	50                   	push   eax
+100d94c8:	e8 23 0d f5 ff       	call   0x1002a1f0
+100d94cd:	83 c4 08             	add    esp,0x8
+100d94d0:	50                   	push   eax
+100d94d1:	e8 1a 0d f5 ff       	call   0x1002a1f0
+100d94d6:	8b 57 10             	mov    edx,DWORD PTR [edi+0x10]
+100d94d9:	8d 4f 10             	lea    ecx,[edi+0x10]
+100d94dc:	83 c4 08             	add    esp,0x8
+100d94df:	89 4d dc             	mov    DWORD PTR [ebp-0x24],ecx
+100d94e2:	83 7f 14 10          	cmp    DWORD PTR [edi+0x14],0x10
+100d94e6:	8b cf                	mov    ecx,edi
+100d94e8:	72 02                	jb     0x100d94ec
+100d94ea:	8b 0f                	mov    ecx,DWORD PTR [edi]
+100d94ec:	52                   	push   edx
+100d94ed:	51                   	push   ecx
+100d94ee:	50                   	push   eax
+100d94ef:	e8 5c 36 f5 ff       	call   0x1002cb50
+100d94f4:	83 c4 0c             	add    esp,0xc
+100d94f7:	c6 45 fc 04          	mov    BYTE PTR [ebp-0x4],0x4
+100d94fb:	8d 8d 04 ff ff ff    	lea    ecx,[ebp-0xfc]
+100d9501:	e8 3a 0e f7 ff       	call   0x1004a340
+100d9506:	57                   	push   edi
+100d9507:	8d 45 e4             	lea    eax,[ebp-0x1c]
+100d950a:	c7 45 e4 00 00 00 00 	mov    DWORD PTR [ebp-0x1c],0x0
+100d9511:	50                   	push   eax
+100d9512:	e8 f9 02 00 00       	call   0x100d9810
+100d9517:	8b 75 e4             	mov    esi,DWORD PTR [ebp-0x1c]
+100d951a:	3b 35 48 8e 47 10    	cmp    esi,DWORD PTR ds:0x10478e48
+100d9520:	74 2f                	je     0x100d9551
+100d9522:	83 7e 24 10          	cmp    DWORD PTR [esi+0x24],0x10
+100d9526:	8d 56 10             	lea    edx,[esi+0x10]
+100d9529:	72 03                	jb     0x100d952e
+100d952b:	8b 56 10             	mov    edx,DWORD PTR [esi+0x10]
+100d952e:	83 7f 14 10          	cmp    DWORD PTR [edi+0x14],0x10
+100d9532:	8b cf                	mov    ecx,edi
+100d9534:	72 02                	jb     0x100d9538
+100d9536:	8b 0f                	mov    ecx,DWORD PTR [edi]
+100d9538:	ff 76 20             	push   DWORD PTR [esi+0x20]
+100d953b:	8b 45 dc             	mov    eax,DWORD PTR [ebp-0x24]
+100d953e:	52                   	push   edx
+100d953f:	ff 30                	push   DWORD PTR [eax]
+100d9541:	51                   	push   ecx
+100d9542:	e8 a9 1c f5 ff       	call   0x1002b1f0
+100d9547:	c1 e8 1f             	shr    eax,0x1f
+100d954a:	83 c4 10             	add    esp,0x10
+100d954d:	84 c0                	test   al,al
+100d954f:	74 20                	je     0x100d9571
+100d9551:	51                   	push   ecx
+100d9552:	8d 45 e4             	lea    eax,[ebp-0x1c]
+100d9555:	89 7d e4             	mov    DWORD PTR [ebp-0x1c],edi
+100d9558:	50                   	push   eax
+100d9559:	51                   	push   ecx
+100d955a:	e8 a1 0e 00 00       	call   0x100da400
+100d955f:	50                   	push   eax
+100d9560:	83 c0 10             	add    eax,0x10
+100d9563:	50                   	push   eax
+100d9564:	56                   	push   esi
+100d9565:	8d 45 e4             	lea    eax,[ebp-0x1c]
+100d9568:	50                   	push   eax
+100d9569:	e8 22 0f 00 00       	call   0x100da490
+100d956e:	8b 75 e4             	mov    esi,DWORD PTR [ebp-0x1c]
+100d9571:	85 db                	test   ebx,ebx
+100d9573:	74 04                	je     0x100d9579
+100d9575:	f0 ff 43 04          	lock inc DWORD PTR [ebx+0x4]
+100d9579:	8b 45 e8             	mov    eax,DWORD PTR [ebp-0x18]
+100d957c:	89 46 28             	mov    DWORD PTR [esi+0x28],eax
+100d957f:	8b 46 2c             	mov    eax,DWORD PTR [esi+0x2c]
+100d9582:	89 45 e4             	mov    DWORD PTR [ebp-0x1c],eax
+100d9585:	89 5e 2c             	mov    DWORD PTR [esi+0x2c],ebx
+100d9588:	8b f0                	mov    esi,eax
+100d958a:	c6 45 fc 06          	mov    BYTE PTR [ebp-0x4],0x6
+100d958e:	85 f6                	test   esi,esi
+100d9590:	74 21                	je     0x100d95b3
+100d9592:	83 c8 ff             	or     eax,0xffffffff
+100d9595:	f0 0f c1 46 04       	lock xadd DWORD PTR [esi+0x4],eax
+100d959a:	75 17                	jne    0x100d95b3
+100d959c:	8b 06                	mov    eax,DWORD PTR [esi]
+100d959e:	8b ce                	mov    ecx,esi
+100d95a0:	ff 10                	call   DWORD PTR [eax]
+100d95a2:	83 c8 ff             	or     eax,0xffffffff
+100d95a5:	f0 0f c1 46 08       	lock xadd DWORD PTR [esi+0x8],eax
+100d95aa:	75 07                	jne    0x100d95b3
+100d95ac:	8b 06                	mov    eax,DWORD PTR [esi]
+100d95ae:	8b ce                	mov    ecx,esi
+100d95b0:	ff 50 04             	call   DWORD PTR [eax+0x4]
+100d95b3:	c6 45 fc 04          	mov    BYTE PTR [ebp-0x4],0x4
+100d95b7:	81 ff c4 3c 46 10    	cmp    edi,0x10463cc4 ; 0x10463cc4 f32=0.0
+100d95bd:	74 18                	je     0x100d95d7
+100d95bf:	83 7f 14 10          	cmp    DWORD PTR [edi+0x14],0x10
+100d95c3:	72 02                	jb     0x100d95c7
+100d95c5:	8b 3f                	mov    edi,DWORD PTR [edi]
+100d95c7:	8b 45 dc             	mov    eax,DWORD PTR [ebp-0x24]
+100d95ca:	b9 c4 3c 46 10       	mov    ecx,0x10463cc4 ; 0x10463cc4 f32=0.0
+100d95cf:	ff 30                	push   DWORD PTR [eax]
+100d95d1:	57                   	push   edi
+100d95d2:	e8 a9 26 f4 ff       	call   0x1001bc80
+100d95d7:	83 ce ff             	or     esi,0xffffffff
+100d95da:	68 72 01 00 00       	push   0x172
+100d95df:	68 d8 62 3f 10       	push   0x103f62d8 ; 0x103f62d8 '[构建目录]\\polly\\tags\\v4.4.2\\src\\model\\model.cc'
+100d95e4:	68 cc 67 3f 10       	push   0x103f67cc ; 0x103f67cc 'polly::Model::Initialize'
+100d95e9:	6a 00                	push   0x0
+100d95eb:	8d 8d 5c fe ff ff    	lea    ecx,[ebp-0x1a4]
+100d95f1:	e8 1a 0c f7 ff       	call   0x1004a210
+100d95f6:	68 bc 53 3a 10       	push   0x103a53bc
+100d95fb:	c6 45 fc 07          	mov    BYTE PTR [ebp-0x4],0x7
+100d95ff:	83 c0 10             	add    eax,0x10
+100d9602:	8b 7d e0             	mov    edi,DWORD PTR [ebp-0x20]
+100d9605:	57                   	push   edi
+100d9606:	68 04 68 3f 10       	push   0x103f6804 ; 0x103f6804 'Initialize end. [err_code='
+100d960b:	68 bc 53 3a 10       	push   0x103a53bc
+100d9610:	68 0c 63 3f 10       	push   0x103f630c ; 0x103f630c 'MODEL'
+100d9615:	68 c8 53 3a 10       	push   0x103a53c8
+100d961a:	50                   	push   eax
+100d961b:	e8 d0 0b f5 ff       	call   0x1002a1f0
+100d9620:	83 c4 08             	add    esp,0x8
+100d9623:	50                   	push   eax
+100d9624:	e8 c7 0b f5 ff       	call   0x1002a1f0
+100d9629:	83 c4 08             	add    esp,0x8
+100d962c:	50                   	push   eax
+100d962d:	e8 be 0b f5 ff       	call   0x1002a1f0
+100d9632:	83 c4 08             	add    esp,0x8
+100d9635:	50                   	push   eax
+100d9636:	e8 b5 0b f5 ff       	call   0x1002a1f0
+100d963b:	83 c4 08             	add    esp,0x8
+100d963e:	8b c8                	mov    ecx,eax
+100d9640:	e8 0b c3 f4 ff       	call   0x10025950
+100d9645:	50                   	push   eax
+100d9646:	e8 a5 0b f5 ff       	call   0x1002a1f0
+100d964b:	83 c4 08             	add    esp,0x8
+100d964e:	c6 45 fc 04          	mov    BYTE PTR [ebp-0x4],0x4
+100d9652:	8d 8d 5c fe ff ff    	lea    ecx,[ebp-0x1a4]
+100d9658:	e8 e3 0c f7 ff       	call   0x1004a340
+100d965d:	c7                   	.byte 0xc7
+100d965e:	45                   	inc    ebp
+100d965f:	fc                   	cld

@@ -1,0 +1,116 @@
+
+resources\plugins\ases\ia32\win32\lsx-ases.dll:     file format pei-i386
+
+
+Disassembly of section .text:
+
+100cb2f0 <.text+0xca2f0>:
+100cb2f0:	55                   	push   ebp
+100cb2f1:	8b ec                	mov    ebp,esp
+100cb2f3:	83 e4 f8             	and    esp,0xfffffff8
+100cb2f6:	51                   	push   ecx
+100cb2f7:	56                   	push   esi
+100cb2f8:	8b f1                	mov    esi,ecx
+100cb2fa:	8b 4e 4c             	mov    ecx,DWORD PTR [esi+0x4c]
+100cb2fd:	8b 01                	mov    eax,DWORD PTR [ecx]
+100cb2ff:	ff 50 1c             	call   DWORD PTR [eax+0x1c]
+100cb302:	8b c8                	mov    ecx,eax
+100cb304:	83 78 14 10          	cmp    DWORD PTR [eax+0x14],0x10
+100cb308:	72 02                	jb     0x100cb30c
+100cb30a:	8b 08                	mov    ecx,DWORD PTR [eax]
+100cb30c:	6a 05                	push   0x5
+100cb30e:	68 c0 3e 3f 10       	push   0x103f3ec0 ; 0x103f3ec0 'const'
+100cb313:	ff 70 10             	push   DWORD PTR [eax+0x10]
+100cb316:	51                   	push   ecx
+100cb317:	e8 94 22 f6 ff       	call   0x1002d5b0
+100cb31c:	83 c4 10             	add    esp,0x10
+100cb31f:	84 c0                	test   al,al
+100cb321:	74 11                	je     0x100cb334
+100cb323:	ff 75 08             	push   DWORD PTR [ebp+0x8]
+100cb326:	8b ce                	mov    ecx,esi
+100cb328:	e8 43 0c 00 00       	call   0x100cbf70
+100cb32d:	5e                   	pop    esi
+100cb32e:	8b e5                	mov    esp,ebp
+100cb330:	5d                   	pop    ebp
+100cb331:	c2 04 00             	ret    0x4
+100cb334:	8b 4e 4c             	mov    ecx,DWORD PTR [esi+0x4c]
+100cb337:	8b 01                	mov    eax,DWORD PTR [ecx]
+100cb339:	ff 50 1c             	call   DWORD PTR [eax+0x1c]
+100cb33c:	8b c8                	mov    ecx,eax
+100cb33e:	83 78 14 10          	cmp    DWORD PTR [eax+0x14],0x10
+100cb342:	72 02                	jb     0x100cb346
+100cb344:	8b 08                	mov    ecx,DWORD PTR [eax]
+100cb346:	6a 06                	push   0x6
+100cb348:	68 20 1b 3f 10       	push   0x103f1b20 ; 0x103f1b20 'vector'
+100cb34d:	ff 70 10             	push   DWORD PTR [eax+0x10]
+100cb350:	51                   	push   ecx
+100cb351:	e8 5a 22 f6 ff       	call   0x1002d5b0
+100cb356:	83 c4 10             	add    esp,0x10
+100cb359:	8b ce                	mov    ecx,esi
+100cb35b:	ff 75 08             	push   DWORD PTR [ebp+0x8]
+100cb35e:	84 c0                	test   al,al
+100cb360:	74 0c                	je     0x100cb36e
+100cb362:	e8 49 10 00 00       	call   0x100cc3b0
+100cb367:	5e                   	pop    esi
+100cb368:	8b e5                	mov    esp,ebp
+100cb36a:	5d                   	pop    ebp
+100cb36b:	c2 04 00             	ret    0x4
+100cb36e:	e8 8d 14 00 00       	call   0x100cc800
+100cb373:	5e                   	pop    esi
+100cb374:	8b e5                	mov    esp,ebp
+100cb376:	5d                   	pop    ebp
+100cb377:	c2 04 00             	ret    0x4
+100cb37a:	cc                   	int3
+100cb37b:	cc                   	int3
+100cb37c:	cc                   	int3
+100cb37d:	cc                   	int3
+100cb37e:	cc                   	int3
+100cb37f:	cc                   	int3
+100cb380:	55                   	push   ebp
+100cb381:	8b ec                	mov    ebp,esp
+100cb383:	83 e4 f8             	and    esp,0xfffffff8
+100cb386:	51                   	push   ecx
+100cb387:	56                   	push   esi
+100cb388:	8b f1                	mov    esi,ecx
+100cb38a:	f3 0f 11 4c 24 04    	movss  DWORD PTR [esp+0x4],xmm1
+100cb390:	8b 4e 4c             	mov    ecx,DWORD PTR [esi+0x4c]
+100cb393:	8b 01                	mov    eax,DWORD PTR [ecx]
+100cb395:	ff 50 1c             	call   DWORD PTR [eax+0x1c]
+100cb398:	8b c8                	mov    ecx,eax
+100cb39a:	83 78 14 10          	cmp    DWORD PTR [eax+0x14],0x10
+100cb39e:	72 02                	jb     0x100cb3a2
+100cb3a0:	8b 08                	mov    ecx,DWORD PTR [eax]
+100cb3a2:	6a 05                	push   0x5
+100cb3a4:	68 c0 3e 3f 10       	push   0x103f3ec0 ; 0x103f3ec0 'const'
+100cb3a9:	ff 70 10             	push   DWORD PTR [eax+0x10]
+100cb3ac:	51                   	push   ecx
+100cb3ad:	e8 fe 21 f6 ff       	call   0x1002d5b0
+100cb3b2:	83 c4 10             	add    esp,0x10
+100cb3b5:	84 c0                	test   al,al
+100cb3b7:	74 12                	je     0x100cb3cb
+100cb3b9:	f3 0f 10 4c 24 04    	movss  xmm1,DWORD PTR [esp+0x4]
+100cb3bf:	8b ce                	mov    ecx,esi
+100cb3c1:	e8 5a 19 00 00       	call   0x100ccd20
+100cb3c6:	5e                   	pop    esi
+100cb3c7:	8b e5                	mov    esp,ebp
+100cb3c9:	5d                   	pop    ebp
+100cb3ca:	c3                   	ret
+100cb3cb:	8b 4e 4c             	mov    ecx,DWORD PTR [esi+0x4c]
+100cb3ce:	8b 01                	mov    eax,DWORD PTR [ecx]
+100cb3d0:	ff 50 1c             	call   DWORD PTR [eax+0x1c]
+100cb3d3:	8b c8                	mov    ecx,eax
+100cb3d5:	83 78 14 10          	cmp    DWORD PTR [eax+0x14],0x10
+100cb3d9:	72 02                	jb     0x100cb3dd
+100cb3db:	8b 08                	mov    ecx,DWORD PTR [eax]
+100cb3dd:	6a 06                	push   0x6
+100cb3df:	68 20 1b 3f 10       	push   0x103f1b20 ; 0x103f1b20 'vector'
+100cb3e4:	ff 70 10             	push   DWORD PTR [eax+0x10]
+100cb3e7:	51                   	push   ecx
+100cb3e8:	e8 c3 21 f6 ff       	call   0x1002d5b0
+100cb3ed:	f3 0f 10 4c 24 14    	movss  xmm1,DWORD PTR [esp+0x14]
+100cb3f3:	83 c4 10             	add    esp,0x10
+100cb3f6:	8b ce                	mov    ecx,esi
+100cb3f8:	84 c0                	test   al,al
+100cb3fa:	74 0a                	je     0x100cb406
+100cb3fc:	e8                   	.byte 0xe8
+100cb3fd:	df 1c 00             	fistp  WORD PTR [eax+eax*1]

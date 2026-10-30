@@ -1,0 +1,98 @@
+
+resources\plugins\ases\ia32\win32\lsx-ases.dll:     file format pei-i386
+
+
+Disassembly of section .text:
+
+10046420 <.text+0x45420>:
+10046420:	56                   	push   esi
+10046421:	8b f1                	mov    esi,ecx
+10046423:	8d 8e a0 00 00 00    	lea    ecx,[esi+0xa0]
+10046429:	e8 42 a2 ff ff       	call   0x10040670
+1004642e:	8d 8e 94 00 00 00    	lea    ecx,[esi+0x94]
+10046434:	e8 47 0d fe ff       	call   0x10027180
+10046439:	8d 8e 88 00 00 00    	lea    ecx,[esi+0x88]
+1004643f:	e8 4c 0a fe ff       	call   0x10026e90
+10046444:	8d 4e 7c             	lea    ecx,[esi+0x7c]
+10046447:	e8 54 55 fd ff       	call   0x1001b9a0
+1004644c:	8d 4e 70             	lea    ecx,[esi+0x70]
+1004644f:	e8 3c 0a fe ff       	call   0x10026e90
+10046454:	8d 4e 64             	lea    ecx,[esi+0x64]
+10046457:	e8 34 0a fe ff       	call   0x10026e90
+1004645c:	8d 4e 58             	lea    ecx,[esi+0x58]
+1004645f:	e8 2c 0a fe ff       	call   0x10026e90
+10046464:	8d 4e 4c             	lea    ecx,[esi+0x4c]
+10046467:	e8 34 55 fd ff       	call   0x1001b9a0
+1004646c:	8d 4e 40             	lea    ecx,[esi+0x40]
+1004646f:	e8 2c 55 fd ff       	call   0x1001b9a0
+10046474:	8d 4e 28             	lea    ecx,[esi+0x28]
+10046477:	e8 64 57 fd ff       	call   0x1001bbe0
+1004647c:	8d 4e 04             	lea    ecx,[esi+0x4]
+1004647f:	5e                   	pop    esi
+10046480:	e9 5b 57 fd ff       	jmp    0x1001bbe0
+10046485:	cc                   	int3
+10046486:	cc                   	int3
+10046487:	cc                   	int3
+10046488:	cc                   	int3
+10046489:	cc                   	int3
+1004648a:	cc                   	int3
+1004648b:	cc                   	int3
+1004648c:	cc                   	int3
+1004648d:	cc                   	int3
+1004648e:	cc                   	int3
+1004648f:	cc                   	int3
+10046490:	55                   	push   ebp
+10046491:	8b ec                	mov    ebp,esp
+10046493:	6a ff                	push   0xffffffff
+10046495:	68 2b f2 35 10       	push   0x1035f22b
+1004649a:	64 a1 00 00 00 00    	mov    eax,fs:0x0
+100464a0:	50                   	push   eax
+100464a1:	81 ec ac 00 00 00    	sub    esp,0xac
+100464a7:	53                   	push   ebx
+100464a8:	56                   	push   esi
+100464a9:	57                   	push   edi
+100464aa:	a1 6c 30 46 10       	mov    eax,ds:0x1046306c ; 0x1046306c f32=-0.002943414729088545
+100464af:	33 c5                	xor    eax,ebp
+100464b1:	50                   	push   eax
+100464b2:	8d 45 f4             	lea    eax,[ebp-0xc]
+100464b5:	64 a3 00 00 00 00    	mov    fs:0x0,eax
+100464bb:	8b f9                	mov    edi,ecx
+100464bd:	6a 08                	push   0x8
+100464bf:	e8 0c a3 ff ff       	call   0x100407d0
+100464c4:	8b 5d 08             	mov    ebx,DWORD PTR [ebp+0x8]
+100464c7:	33 c9                	xor    ecx,ecx
+100464c9:	c6 45 f0 01          	mov    BYTE PTR [ebp-0x10],0x1
+100464cd:	8b 03                	mov    eax,DWORD PTR [ebx]
+100464cf:	83 e8 05             	sub    eax,0x5
+100464d2:	0f 84 e2 00 00 00    	je     0x100465ba
+100464d8:	83 e8 01             	sub    eax,0x1
+100464db:	0f 84 d2 00 00 00    	je     0x100465b3
+100464e1:	83 e8 01             	sub    eax,0x1
+100464e4:	0f 84 c2 00 00 00    	je     0x100465ac
+100464ea:	68 d8 04 00 00       	push   0x4d8
+100464ef:	68 7c c3 3e 10       	push   0x103ec37c ; 0x103ec37c '[构建目录]\\polly\\tags\\v4.4.2\\src\\session\\state.cc'
+100464f4:	68 fc ce 3e 10       	push   0x103ecefc ; 0x103ecefc 'polly::StateDecoded::Process'
+100464f9:	6a ff                	push   0xffffffff
+100464fb:	8d 8d 48 ff ff ff    	lea    ecx,[ebp-0xb8]
+10046501:	e8 0a 3d 00 00       	call   0x1004a210
+10046506:	8b f0                	mov    esi,eax
+10046508:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [ebp-0x4],0x0
+1004650f:	b9 05 00 00 00       	mov    ecx,0x5
+10046514:	ff 33                	push   DWORD PTR [ebx]
+10046516:	68 d4 c3 3e 10       	push   0x103ec3d4 ; 0x103ec3d4 ' request:'
+1004651b:	e8 30 76 fd ff       	call   0x1001db50
+10046520:	50                   	push   eax
+10046521:	68 10 56 3a 10       	push   0x103a5610
+10046526:	6a 05                	push   0x5
+10046528:	68 14 56 3a 10       	push   0x103a5614 ; 0x103a5614 '[err_code='
+1004652d:	68 bc 53 3a 10       	push   0x103a53bc
+10046532:	68 30 c3 3e 10       	push   0x103ec330 ; 0x103ec330 'STATE'
+10046537:	8d 46 10             	lea    eax,[esi+0x10]
+1004653a:	68 c8 53 3a 10       	push   0x103a53c8
+1004653f:	50                   	push   eax
+10046540:	e8 ab 3c fe ff       	call   0x1002a1f0
+10046545:	83 c4 08             	add    esp,0x8
+10046548:	50                   	push   eax
+10046549:	e8 a2 3c fe ff       	call   0x1002a1f0
+1004654e:	83                   	.byte 0x83
+1004654f:	c4                   	.byte 0xc4

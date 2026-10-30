@@ -1,0 +1,488 @@
+
+resources\plugins\ases\ia32\win32\lsx-ases.dll:     file format pei-i386
+
+
+Disassembly of section .text:
+
+1021dc80 <.text+0x21cc80>:
+1021dc80:	1c ff                	sbb    al,0xff
+1021dc82:	ff                   	(bad)
+1021dc83:	ff c6                	inc    esi
+1021dc85:	45                   	inc    ebp
+1021dc86:	fc                   	cld
+1021dc87:	02 68 e8             	add    ch,BYTE PTR [eax-0x18]
+1021dc8a:	43                   	inc    ebx
+1021dc8b:	3f                   	aas
+1021dc8c:	10 50 e8             	adc    BYTE PTR [eax-0x18],dl
+1021dc8f:	5d                   	pop    ebp
+1021dc90:	c5 e0 ff             	(bad)
+1021dc93:	83 c4 08             	add    esp,0x8
+1021dc96:	c6 45 fc 01          	mov    BYTE PTR [ebp-0x4],0x1
+1021dc9a:	8d 8d 0c ff ff ff    	lea    ecx,[ebp-0xf4]
+1021dca0:	e8 9b c6 e2 ff       	call   0x1004a340
+1021dca5:	f3 0f 10 45 e8       	movss  xmm0,DWORD PTR [ebp-0x18]
+1021dcaa:	8b 4d ec             	mov    ecx,DWORD PTR [ebp-0x14]
+1021dcad:	8b 45 10             	mov    eax,DWORD PTR [ebp+0x10]
+1021dcb0:	85 c0                	test   eax,eax
+1021dcb2:	74 04                	je     0x1021dcb8
+1021dcb4:	f3 0f 11 00          	movss  DWORD PTR [eax],xmm0
+1021dcb8:	8b 75 08             	mov    esi,DWORD PTR [ebp+0x8]
+1021dcbb:	8b 45 d4             	mov    eax,DWORD PTR [ebp-0x2c]
+1021dcbe:	89 0e                	mov    DWORD PTR [esi],ecx
+1021dcc0:	8b 48 2c             	mov    ecx,DWORD PTR [eax+0x2c]
+1021dcc3:	2b 48 28             	sub    ecx,DWORD PTR [eax+0x28]
+1021dcc6:	c1 f9 03             	sar    ecx,0x3
+1021dcc9:	83 e9 02             	sub    ecx,0x2
+1021dccc:	89 4e 04             	mov    DWORD PTR [esi+0x4],ecx
+1021dccf:	8d 4d b4             	lea    ecx,[ebp-0x4c]
+1021dcd2:	e8 29 d7 df ff       	call   0x1001b400
+1021dcd7:	8b c6                	mov    eax,esi
+1021dcd9:	8b 4d f4             	mov    ecx,DWORD PTR [ebp-0xc]
+1021dcdc:	64 89 0d 00 00 00 00 	mov    DWORD PTR fs:0x0,ecx
+1021dce3:	59                   	pop    ecx
+1021dce4:	5f                   	pop    edi
+1021dce5:	5e                   	pop    esi
+1021dce6:	5b                   	pop    ebx
+1021dce7:	8b e5                	mov    esp,ebp
+1021dce9:	5d                   	pop    ebp
+1021dcea:	c2 0c 00             	ret    0xc
+1021dced:	68 99 02 00 00       	push   0x299
+1021dcf2:	68 68 80 40 10       	push   0x10408068 ; 0x10408068 '[构建目录]\\kaldi-5.4\\src\\decoder\\lattice-faster-online-decoder.cc'
+1021dcf7:	68 4c 81 40 10       	push   0x1040814c ; 0x1040814c 'kaldi::LatticeFasterOnlineDecoder::BestPathEnd'
+1021dcfc:	6a fe                	push   0xfffffffe
+1021dcfe:	8d 8d 64 fe ff ff    	lea    ecx,[ebp-0x19c]
+1021dd04:	e8 07 c5 e2 ff       	call   0x1004a210
+1021dd09:	68 6c 41 3f 10       	push   0x103f416c ; 0x103f416c 'BestPathEnd() with use_final_probs == false'
+1021dd0e:	51                   	push   ecx
+1021dd0f:	8d 85 74 fe ff ff    	lea    eax,[ebp-0x18c]
+1021dd15:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [ebp-0x4],0x0
+1021dd1c:	68 b8 3f 3f 10       	push   0x103f3fb8 ; 0x103f3fb8 'You cannot call FinalizeDecoding() and then call '
+1021dd21:	50                   	push   eax
+1021dd22:	e8 c9 c4 e0 ff       	call   0x1002a1f0
+1021dd27:	83 c4 0c             	add    esp,0xc
+1021dd2a:	50                   	push   eax
+1021dd2b:	e8 c0 c4 e0 ff       	call   0x1002a1f0
+1021dd30:	83 c4 08             	add    esp,0x8
+1021dd33:	c7 45 fc ff ff ff ff 	mov    DWORD PTR [ebp-0x4],0xffffffff
+1021dd3a:	8d 8d 64 fe ff ff    	lea    ecx,[ebp-0x19c]
+1021dd40:	e8 6b c8 e2 ff       	call   0x1004a5b0
+1021dd45:	cc                   	int3
+1021dd46:	cc                   	int3
+1021dd47:	cc                   	int3
+1021dd48:	cc                   	int3
+1021dd49:	cc                   	int3
+1021dd4a:	cc                   	int3
+1021dd4b:	cc                   	int3
+1021dd4c:	cc                   	int3
+1021dd4d:	cc                   	int3
+1021dd4e:	cc                   	int3
+1021dd4f:	cc                   	int3
+1021dd50:	55                   	push   ebp
+1021dd51:	8b ec                	mov    ebp,esp
+1021dd53:	6a ff                	push   0xffffffff
+1021dd55:	68 3c 09 36 10       	push   0x1036093c
+1021dd5a:	64 a1 00 00 00 00    	mov    eax,fs:0x0
+1021dd60:	50                   	push   eax
+1021dd61:	81 ec ac 00 00 00    	sub    esp,0xac
+1021dd67:	53                   	push   ebx
+1021dd68:	56                   	push   esi
+1021dd69:	57                   	push   edi
+1021dd6a:	a1 6c 30 46 10       	mov    eax,ds:0x1046306c ; 0x1046306c f32=-0.002943414729088545
+1021dd6f:	33 c5                	xor    eax,ebp
+1021dd71:	50                   	push   eax
+1021dd72:	8d 45 f4             	lea    eax,[ebp-0xc]
+1021dd75:	64 a3 00 00 00 00    	mov    fs:0x0,eax
+1021dd7b:	8b d9                	mov    ebx,ecx
+1021dd7d:	8b 55 10             	mov    edx,DWORD PTR [ebp+0x10]
+1021dd80:	8b 7d 14             	mov    edi,DWORD PTR [ebp+0x14]
+1021dd83:	8b 4a 10             	mov    ecx,DWORD PTR [edx+0x10]
+1021dd86:	85 c9                	test   ecx,ecx
+1021dd88:	74 47                	je     0x1021ddd1
+1021dd8a:	8b 49 08             	mov    ecx,DWORD PTR [ecx+0x8]
+1021dd8d:	85 c9                	test   ecx,ecx
+1021dd8f:	74 7d                	je     0x1021de0e
+1021dd91:	39 11                	cmp    DWORD PTR [ecx],edx
+1021dd93:	74 09                	je     0x1021dd9e
+1021dd95:	8b 49 14             	mov    ecx,DWORD PTR [ecx+0x14]
+1021dd98:	85 c9                	test   ecx,ecx
+1021dd9a:	74 72                	je     0x1021de0e
+1021dd9c:	eb f3                	jmp    0x1021dd91
+1021dd9e:	8b 75 0c             	mov    esi,DWORD PTR [ebp+0xc]
+1021dda1:	8b 41 04             	mov    eax,DWORD PTR [ecx+0x4]
+1021dda4:	89 06                	mov    DWORD PTR [esi],eax
+1021dda6:	8b 41 08             	mov    eax,DWORD PTR [ecx+0x8]
+1021dda9:	89 46 04             	mov    DWORD PTR [esi+0x4],eax
+1021ddac:	83 79 04 00          	cmp    DWORD PTR [ecx+0x4],0x0
+1021ddb0:	f3 0f 10 49 0c       	movss  xmm1,DWORD PTR [ecx+0xc]
+1021ddb5:	f3 0f 10 41 10       	movss  xmm0,DWORD PTR [ecx+0x10]
+1021ddba:	74 09                	je     0x1021ddc5
+1021ddbc:	8b 43 54             	mov    eax,DWORD PTR [ebx+0x54]
+1021ddbf:	f3 0f 5c 04 b8       	subss  xmm0,DWORD PTR [eax+edi*4]
+1021ddc4:	4f                   	dec    edi
+1021ddc5:	f3 0f 11 4e 08       	movss  DWORD PTR [esi+0x8],xmm1
+1021ddca:	f3 0f 11 46 0c       	movss  DWORD PTR [esi+0xc],xmm0
+1021ddcf:	eb 1e                	jmp    0x1021ddef
+1021ddd1:	8b 45 0c             	mov    eax,DWORD PTR [ebp+0xc]
+1021ddd4:	c7 00 00 00 00 00    	mov    DWORD PTR [eax],0x0
+1021ddda:	c7 40 04 00 00 00 00 	mov    DWORD PTR [eax+0x4],0x0
+1021dde1:	c7 40 08 00 00 00 00 	mov    DWORD PTR [eax+0x8],0x0
+1021dde8:	c7 40 0c 00 00 00 00 	mov    DWORD PTR [eax+0xc],0x0
+1021ddef:	8b 45 08             	mov    eax,DWORD PTR [ebp+0x8]
+1021ddf2:	8b 4a 10             	mov    ecx,DWORD PTR [edx+0x10]
+1021ddf5:	89 08                	mov    DWORD PTR [eax],ecx
+1021ddf7:	89 78 04             	mov    DWORD PTR [eax+0x4],edi
+1021ddfa:	8b 4d f4             	mov    ecx,DWORD PTR [ebp-0xc]
+1021ddfd:	64 89 0d 00 00 00 00 	mov    DWORD PTR fs:0x0,ecx
+1021de04:	59                   	pop    ecx
+1021de05:	5f                   	pop    edi
+1021de06:	5e                   	pop    esi
+1021de07:	5b                   	pop    ebx
+1021de08:	8b e5                	mov    esp,ebp
+1021de0a:	5d                   	pop    ebp
+1021de0b:	c2 10 00             	ret    0x10
+1021de0e:	68 e0 02 00 00       	push   0x2e0
+1021de13:	68 68 80 40 10       	push   0x10408068 ; 0x10408068 '[构建目录]\\kaldi-5.4\\src\\decoder\\lattice-faster-online-decoder.cc'
+1021de18:	68 14 81 40 10       	push   0x10408114 ; 0x10408114 'kaldi::LatticeFasterOnlineDecoder::TraceBackBestPath'
+1021de1d:	6a fe                	push   0xfffffffe
+1021de1f:	8d 8d 48 ff ff ff    	lea    ecx,[ebp-0xb8]
+1021de25:	e8 e6 c3 e2 ff       	call   0x1004a210
+1021de2a:	68 00 44 3f 10       	push   0x103f4400 ; 0x103f4400 'bug in token-pruning algorithm)'
+1021de2f:	51                   	push   ecx
+1021de30:	8d 85 58 ff ff ff    	lea    eax,[ebp-0xa8]
+1021de36:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [ebp-0x4],0x0
+1021de3d:	68 80 43 3f 10       	push   0x103f4380 ; 0x103f4380 'Error tracing best-path back (likely '
+1021de42:	50                   	push   eax
+1021de43:	e8 a8 c3 e0 ff       	call   0x1002a1f0
+1021de48:	83 c4 0c             	add    esp,0xc
+1021de4b:	50                   	push   eax
+1021de4c:	e8 9f c3 e0 ff       	call   0x1002a1f0
+1021de51:	83 c4 08             	add    esp,0x8
+1021de54:	c7 45 fc ff ff ff ff 	mov    DWORD PTR [ebp-0x4],0xffffffff
+1021de5b:	8d 8d 48 ff ff ff    	lea    ecx,[ebp-0xb8]
+1021de61:	e8 4a c7 e2 ff       	call   0x1004a5b0
+1021de66:	cc                   	int3
+1021de67:	cc                   	int3
+1021de68:	cc                   	int3
+1021de69:	cc                   	int3
+1021de6a:	cc                   	int3
+1021de6b:	cc                   	int3
+1021de6c:	cc                   	int3
+1021de6d:	cc                   	int3
+1021de6e:	cc                   	int3
+1021de6f:	cc                   	int3
+1021de70:	55                   	push   ebp
+1021de71:	8b ec                	mov    ebp,esp
+1021de73:	53                   	push   ebx
+1021de74:	8b 5d 08             	mov    ebx,DWORD PTR [ebp+0x8]
+1021de77:	56                   	push   esi
+1021de78:	8b f1                	mov    esi,ecx
+1021de7a:	8b cb                	mov    ecx,ebx
+1021de7c:	57                   	push   edi
+1021de7d:	8b 03                	mov    eax,DWORD PTR [ebx]
+1021de7f:	ff 50 08             	call   DWORD PTR [eax+0x8]
+1021de82:	8b 56 2c             	mov    edx,DWORD PTR [esi+0x2c]
+1021de85:	8b ca                	mov    ecx,edx
+1021de87:	8b 7e 28             	mov    edi,DWORD PTR [esi+0x28]
+1021de8a:	2b cf                	sub    ecx,edi
+1021de8c:	c1 f9 03             	sar    ecx,0x3
+1021de8f:	49                   	dec    ecx
+1021de90:	89 45 08             	mov    DWORD PTR [ebp+0x8],eax
+1021de93:	3b c8                	cmp    ecx,eax
+1021de95:	7d 49                	jge    0x1021dee0
+1021de97:	2b d7                	sub    edx,edi
+1021de99:	c1 fa 03             	sar    edx,0x3
+1021de9c:	8d 42 ff             	lea    eax,[edx-0x1]
+1021de9f:	99                   	cdq
+1021dea0:	f7 7e 70             	idiv   DWORD PTR [esi+0x70]
+1021dea3:	85 d2                	test   edx,edx
+1021dea5:	75 14                	jne    0x1021debb
+1021dea7:	f3 0f 10 8e 80 00 00 	movss  xmm1,DWORD PTR [esi+0x80]
+1021deae:	00 
+1021deaf:	8b ce                	mov    ecx,esi
+1021deb1:	f3 0f 59 4e 6c       	mulss  xmm1,DWORD PTR [esi+0x6c]
+1021deb6:	e8 f5 f7 ff ff       	call   0x1021d6b0
+1021debb:	53                   	push   ebx
+1021debc:	8b ce                	mov    ecx,esi
+1021debe:	e8 ad 04 00 00       	call   0x1021e370
+1021dec3:	0f 28 c8             	movaps xmm1,xmm0
+1021dec6:	8b ce                	mov    ecx,esi
+1021dec8:	e8 23 05 00 00       	call   0x1021e3f0
+1021decd:	8b 56 2c             	mov    edx,DWORD PTR [esi+0x2c]
+1021ded0:	8b c2                	mov    eax,edx
+1021ded2:	8b 7e 28             	mov    edi,DWORD PTR [esi+0x28]
+1021ded5:	2b c7                	sub    eax,edi
+1021ded7:	c1 f8 03             	sar    eax,0x3
+1021deda:	48                   	dec    eax
+1021dedb:	3b 45 08             	cmp    eax,DWORD PTR [ebp+0x8]
+1021dede:	7c b7                	jl     0x1021de97
+1021dee0:	5f                   	pop    edi
+1021dee1:	5e                   	pop    esi
+1021dee2:	5b                   	pop    ebx
+1021dee3:	5d                   	pop    ebp
+1021dee4:	c2 08 00             	ret    0x8
+1021dee7:	cc                   	int3
+1021dee8:	cc                   	int3
+1021dee9:	cc                   	int3
+1021deea:	cc                   	int3
+1021deeb:	cc                   	int3
+1021deec:	cc                   	int3
+1021deed:	cc                   	int3
+1021deee:	cc                   	int3
+1021deef:	cc                   	int3
+1021def0:	55                   	push   ebp
+1021def1:	8b ec                	mov    ebp,esp
+1021def3:	6a ff                	push   0xffffffff
+1021def5:	68 2b f2 35 10       	push   0x1035f22b
+1021defa:	64 a1 00 00 00 00    	mov    eax,fs:0x0
+1021df00:	50                   	push   eax
+1021df01:	81 ec ac 00 00 00    	sub    esp,0xac
+1021df07:	53                   	push   ebx
+1021df08:	56                   	push   esi
+1021df09:	57                   	push   edi
+1021df0a:	a1 6c 30 46 10       	mov    eax,ds:0x1046306c ; 0x1046306c f32=-0.002943414729088545
+1021df0f:	33 c5                	xor    eax,ebp
+1021df11:	50                   	push   eax
+1021df12:	8d 45 f4             	lea    eax,[ebp-0xc]
+1021df15:	64 a3 00 00 00 00    	mov    fs:0x0,eax
+1021df1b:	8b f9                	mov    edi,ecx
+1021df1d:	8b 77 2c             	mov    esi,DWORD PTR [edi+0x2c]
+1021df20:	2b 77 28             	sub    esi,DWORD PTR [edi+0x28]
+1021df23:	8b 9f 90 00 00 00    	mov    ebx,DWORD PTR [edi+0x90]
+1021df29:	c1 fe 03             	sar    esi,0x3
+1021df2c:	e8 cf f2 ff ff       	call   0x1021d200
+1021df31:	83 c6 fe             	add    esi,0xfffffffe
+1021df34:	78 32                	js     0x1021df68
+1021df36:	66 66 0f 1f 84 00 00 	data16 nop WORD PTR [eax+eax*1+0x0]
+1021df3d:	00 00 00 
+1021df40:	51                   	push   ecx
+1021df41:	c7 04 24 00 00 00 00 	mov    DWORD PTR [esp],0x0
+1021df48:	8d 45 f3             	lea    eax,[ebp-0xd]
+1021df4b:	50                   	push   eax
+1021df4c:	8d 45 f2             	lea    eax,[ebp-0xe]
+1021df4f:	8b cf                	mov    ecx,edi
+1021df51:	50                   	push   eax
+1021df52:	56                   	push   esi
+1021df53:	e8 38 f0 ff ff       	call   0x1021cf90
+1021df58:	8d 46 01             	lea    eax,[esi+0x1]
+1021df5b:	8b cf                	mov    ecx,edi
+1021df5d:	50                   	push   eax
+1021df5e:	e8 5d f6 ff ff       	call   0x1021d5c0
+1021df63:	83 ee 01             	sub    esi,0x1
+1021df66:	79 d8                	jns    0x1021df40
+1021df68:	6a 00                	push   0x0
+1021df6a:	8b cf                	mov    ecx,edi
+1021df6c:	e8 4f f6 ff ff       	call   0x1021d5c0
+1021df71:	83 3d 40 88 47 10 04 	cmp    DWORD PTR ds:0x10478840,0x4
+1021df78:	0f 8c b2 00 00 00    	jl     0x1021e030
+1021df7e:	6a 01                	push   0x1
+1021df80:	6a 02                	push   0x2
+1021df82:	8d 8d 58 ff ff ff    	lea    ecx,[ebp-0xa8]
+1021df88:	e8 23 c7 e2 ff       	call   0x1004a6b0
+1021df8d:	6a 2f                	push   0x2f
+1021df8f:	68 68 80 40 10       	push   0x10408068 ; 0x10408068 '[构建目录]\\kaldi-5.4\\src\\decoder\\lattice-faster-online-decoder.cc'
+1021df94:	c7 85 48 ff ff ff 04 	mov    DWORD PTR [ebp-0xb8],0x4
+1021df9b:	00 00 00 
+1021df9e:	c7 85 4c ff ff ff e0 	mov    DWORD PTR [ebp-0xb4],0x104080e0 ; 0x104080e0 'kaldi::LatticeFasterOnlineDecoder::FinalizeDecoding'
+1021dfa5:	80 40 10 
+1021dfa8:	e8 e3 c9 11 00       	call   0x1033a990
+1021dfad:	83 c4 08             	add    esp,0x8
+1021dfb0:	85 c0                	test   eax,eax
+1021dfb2:	75 07                	jne    0x1021dfbb
+1021dfb4:	b8 68 80 40 10       	mov    eax,0x10408068 ; 0x10408068 '[构建目录]\\kaldi-5.4\\src\\decoder\\lattice-faster-online-decoder.cc'
+1021dfb9:	eb 15                	jmp    0x1021dfd0
+1021dfbb:	3d 68 80 40 10       	cmp    eax,0x10408068 ; 0x10408068 '[构建目录]\\kaldi-5.4\\src\\decoder\\lattice-faster-online-decoder.cc'
+1021dfc0:	76 0e                	jbe    0x1021dfd0
+1021dfc2:	80 78 ff 2f          	cmp    BYTE PTR [eax-0x1],0x2f
+1021dfc6:	74 08                	je     0x1021dfd0
+1021dfc8:	48                   	dec    eax
+1021dfc9:	3d 68 80 40 10       	cmp    eax,0x10408068 ; 0x10408068 '[构建目录]\\kaldi-5.4\\src\\decoder\\lattice-faster-online-decoder.cc'
+1021dfce:	77 f2                	ja     0x1021dfc2
+1021dfd0:	89 85 50 ff ff ff    	mov    DWORD PTR [ebp-0xb0],eax
+1021dfd6:	c7 85 54 ff ff ff 15 	mov    DWORD PTR [ebp-0xac],0x315
+1021dfdd:	03 00 00 
+1021dfe0:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [ebp-0x4],0x0
+1021dfe7:	8d 85 58 ff ff ff    	lea    eax,[ebp-0xa8]
+1021dfed:	ff b7 90 00 00 00    	push   DWORD PTR [edi+0x90]
+1021dff3:	68 bc da 3e 10       	push   0x103edabc ; 0x103edabc ' to '
+1021dff8:	53                   	push   ebx
+1021dff9:	68 30 43 3f 10       	push   0x103f4330 ; 0x103f4330 'pruned tokens from '
+1021dffe:	50                   	push   eax
+1021dfff:	e8 ec c1 e0 ff       	call   0x1002a1f0
+1021e004:	83 c4 08             	add    esp,0x8
+1021e007:	8b c8                	mov    ecx,eax
+1021e009:	e8 42 79 e0 ff       	call   0x10025950
+1021e00e:	50                   	push   eax
+1021e00f:	e8 dc c1 e0 ff       	call   0x1002a1f0
+1021e014:	83 c4 08             	add    esp,0x8
+1021e017:	8b c8                	mov    ecx,eax
+1021e019:	e8 32 79 e0 ff       	call   0x10025950
+1021e01e:	8d 8d 48 ff ff ff    	lea    ecx,[ebp-0xb8]
+1021e024:	c7 45 fc ff ff ff ff 	mov    DWORD PTR [ebp-0x4],0xffffffff
+1021e02b:	e8 10 c3 e2 ff       	call   0x1004a340
+1021e030:	8b 4d f4             	mov    ecx,DWORD PTR [ebp-0xc]
+1021e033:	64 89 0d 00 00 00 00 	mov    DWORD PTR fs:0x0,ecx
+1021e03a:	59                   	pop    ecx
+1021e03b:	5f                   	pop    edi
+1021e03c:	5e                   	pop    esi
+1021e03d:	5b                   	pop    ebx
+1021e03e:	8b e5                	mov    esp,ebp
+1021e040:	5d                   	pop    ebp
+1021e041:	c3                   	ret
+1021e042:	cc                   	int3
+1021e043:	cc                   	int3
+1021e044:	cc                   	int3
+1021e045:	cc                   	int3
+1021e046:	cc                   	int3
+1021e047:	cc                   	int3
+1021e048:	cc                   	int3
+1021e049:	cc                   	int3
+1021e04a:	cc                   	int3
+1021e04b:	cc                   	int3
+1021e04c:	cc                   	int3
+1021e04d:	cc                   	int3
+1021e04e:	cc                   	int3
+1021e04f:	cc                   	int3
+1021e050:	55                   	push   ebp
+1021e051:	8b ec                	mov    ebp,esp
+1021e053:	6a ff                	push   0xffffffff
+1021e055:	68 5b f1 35 10       	push   0x1035f15b
+1021e05a:	64 a1 00 00 00 00    	mov    eax,fs:0x0
+1021e060:	50                   	push   eax
+1021e061:	81 ec b0 00 00 00    	sub    esp,0xb0
+1021e067:	53                   	push   ebx
+1021e068:	56                   	push   esi
+1021e069:	57                   	push   edi
+1021e06a:	a1 6c 30 46 10       	mov    eax,ds:0x1046306c ; 0x1046306c f32=-0.002943414729088545
+1021e06f:	33 c5                	xor    eax,ebp
+1021e071:	50                   	push   eax
+1021e072:	8d 45 f4             	lea    eax,[ebp-0xc]
+1021e075:	64 a3 00 00 00 00    	mov    fs:0x0,eax
+1021e07b:	8b d9                	mov    ebx,ecx
+1021e07d:	f3 0f 10 05 f4 aa 41 	movss  xmm0,DWORD PTR ds:0x1041aaf4
+1021e084:	10 
+1021e085:	33 ff                	xor    edi,edi
+1021e087:	81 7b 64 ff ff ff 7f 	cmp    DWORD PTR [ebx+0x64],0x7fffffff
+1021e08e:	0f 28 c8             	movaps xmm1,xmm0
+1021e091:	f3 0f 11 4d f0       	movss  DWORD PTR [ebp-0x10],xmm1
+1021e096:	75 67                	jne    0x1021e0ff
+1021e098:	39 7b 68             	cmp    DWORD PTR [ebx+0x68],edi
+1021e09b:	75 62                	jne    0x1021e0ff
+1021e09d:	8b 4d 08             	mov    ecx,DWORD PTR [ebp+0x8]
+1021e0a0:	85 c9                	test   ecx,ecx
+1021e0a2:	74 29                	je     0x1021e0cd
+1021e0a4:	8b 55 14             	mov    edx,DWORD PTR [ebp+0x14]
+1021e0a7:	66 0f 1f 84 00 00 00 	nop    WORD PTR [eax+eax*1+0x0]
+1021e0ae:	00 00 
+1021e0b0:	8b 41 04             	mov    eax,DWORD PTR [ecx+0x4]
+1021e0b3:	f3 0f 10 00          	movss  xmm0,DWORD PTR [eax]
+1021e0b7:	0f 2f c8             	comiss xmm1,xmm0
+1021e0ba:	76 09                	jbe    0x1021e0c5
+1021e0bc:	0f 28 c8             	movaps xmm1,xmm0
+1021e0bf:	85 d2                	test   edx,edx
+1021e0c1:	74 02                	je     0x1021e0c5
+1021e0c3:	89 0a                	mov    DWORD PTR [edx],ecx
+1021e0c5:	8b 49 08             	mov    ecx,DWORD PTR [ecx+0x8]
+1021e0c8:	47                   	inc    edi
+1021e0c9:	85 c9                	test   ecx,ecx
+1021e0cb:	75 e3                	jne    0x1021e0b0
+1021e0cd:	8b 45 0c             	mov    eax,DWORD PTR [ebp+0xc]
+1021e0d0:	85 c0                	test   eax,eax
+1021e0d2:	74 02                	je     0x1021e0d6
+1021e0d4:	89 38                	mov    DWORD PTR [eax],edi
+1021e0d6:	8b 4d 10             	mov    ecx,DWORD PTR [ebp+0x10]
+1021e0d9:	85 c9                	test   ecx,ecx
+1021e0db:	74 05                	je     0x1021e0e2
+1021e0dd:	8b 43 60             	mov    eax,DWORD PTR [ebx+0x60]
+1021e0e0:	89 01                	mov    DWORD PTR [ecx],eax
+1021e0e2:	f3 0f 10 43 60       	movss  xmm0,DWORD PTR [ebx+0x60]
+1021e0e7:	f3 0f 58 c1          	addss  xmm0,xmm1
+1021e0eb:	8b 4d f4             	mov    ecx,DWORD PTR [ebp-0xc]
+1021e0ee:	64 89 0d 00 00 00 00 	mov    DWORD PTR fs:0x0,ecx
+1021e0f5:	59                   	pop    ecx
+1021e0f6:	5f                   	pop    edi
+1021e0f7:	5e                   	pop    esi
+1021e0f8:	5b                   	pop    ebx
+1021e0f9:	8b e5                	mov    esp,ebp
+1021e0fb:	5d                   	pop    ebp
+1021e0fc:	c2 10 00             	ret    0x10
+1021e0ff:	8b 75 08             	mov    esi,DWORD PTR [ebp+0x8]
+1021e102:	8b 43 40             	mov    eax,DWORD PTR [ebx+0x40]
+1021e105:	89 43 44             	mov    DWORD PTR [ebx+0x44],eax
+1021e108:	85 f6                	test   esi,esi
+1021e10a:	74 61                	je     0x1021e16d
+1021e10c:	0f 1f 40 00          	nop    DWORD PTR [eax+0x0]
+1021e110:	8b 46 04             	mov    eax,DWORD PTR [esi+0x4]
+1021e113:	f3 0f 10 00          	movss  xmm0,DWORD PTR [eax]
+1021e117:	8b 43 44             	mov    eax,DWORD PTR [ebx+0x44]
+1021e11a:	f3 0f 11 45 08       	movss  DWORD PTR [ebp+0x8],xmm0
+1021e11f:	39 43 48             	cmp    DWORD PTR [ebx+0x48],eax
+1021e122:	74 0c                	je     0x1021e130
+1021e124:	f3 0f 11 00          	movss  DWORD PTR [eax],xmm0
+1021e128:	83 c0 04             	add    eax,0x4
+1021e12b:	89 43 44             	mov    DWORD PTR [ebx+0x44],eax
+1021e12e:	eb 17                	jmp    0x1021e147
+1021e130:	8d 4d 08             	lea    ecx,[ebp+0x8]
+1021e133:	51                   	push   ecx
+1021e134:	50                   	push   eax
+1021e135:	8d 4b 40             	lea    ecx,[ebx+0x40]
+1021e138:	e8 73 35 e3 ff       	call   0x100516b0
+1021e13d:	f3 0f 10 45 08       	movss  xmm0,DWORD PTR [ebp+0x8]
+1021e142:	f3 0f 10 4d f0       	movss  xmm1,DWORD PTR [ebp-0x10]
+1021e147:	0f 2f c8             	comiss xmm1,xmm0
+1021e14a:	76 11                	jbe    0x1021e15d
+1021e14c:	8b 45 14             	mov    eax,DWORD PTR [ebp+0x14]
+1021e14f:	0f 28 c8             	movaps xmm1,xmm0
+1021e152:	f3 0f 11 4d f0       	movss  DWORD PTR [ebp-0x10],xmm1
+1021e157:	85 c0                	test   eax,eax
+1021e159:	74 02                	je     0x1021e15d
+1021e15b:	89 30                	mov    DWORD PTR [eax],esi
+1021e15d:	8b 76 08             	mov    esi,DWORD PTR [esi+0x8]
+1021e160:	47                   	inc    edi
+1021e161:	85 f6                	test   esi,esi
+1021e163:	75 ab                	jne    0x1021e110
+1021e165:	f3 0f 10 05 f4 aa 41 	movss  xmm0,DWORD PTR ds:0x1041aaf4
+1021e16c:	10 
+1021e16d:	8b 45 0c             	mov    eax,DWORD PTR [ebp+0xc]
+1021e170:	85 c0                	test   eax,eax
+1021e172:	74 02                	je     0x1021e176
+1021e174:	89 38                	mov    DWORD PTR [eax],edi
+1021e176:	83 3d 40 88 47 10 06 	cmp    DWORD PTR ds:0x10478840,0x6
+1021e17d:	8b f3                	mov    esi,ebx
+1021e17f:	f3 0f 11 45 14       	movss  DWORD PTR [ebp+0x14],xmm0
+1021e184:	f3 0f 10 56 60       	movss  xmm2,DWORD PTR [esi+0x60]
+1021e189:	f3 0f 58 d1          	addss  xmm2,xmm1
+1021e18d:	f3 0f 11 55 08       	movss  DWORD PTR [ebp+0x8],xmm2
+1021e192:	0f 8c c9 00 00 00    	jl     0x1021e261
+1021e198:	6a 01                	push   0x1
+1021e19a:	6a 02                	push   0x2
+1021e19c:	8d 8d 54 ff ff ff    	lea    ecx,[ebp-0xac]
+1021e1a2:	e8 09 c5 e2 ff       	call   0x1004a6b0
+1021e1a7:	6a 2f                	push   0x2f
+1021e1a9:	68 68 80 40 10       	push   0x10408068 ; 0x10408068 '[构建目录]\\kaldi-5.4\\src\\decoder\\lattice-faster-online-decoder.cc'
+1021e1ae:	c7 85 44 ff ff ff 06 	mov    DWORD PTR [ebp-0xbc],0x6
+1021e1b5:	00 00 00 
+1021e1b8:	c7 85 48 ff ff ff b0 	mov    DWORD PTR [ebp-0xb8],0x104080b0 ; 0x104080b0 'kaldi::LatticeFasterOnlineDecoder::GetCutoff'
+1021e1bf:	80 40 10 
+1021e1c2:	e8 c9 c7 11 00       	call   0x1033a990
+1021e1c7:	83 c4 08             	add    esp,0x8
+1021e1ca:	85 c0                	test   eax,eax
+1021e1cc:	75 07                	jne    0x1021e1d5
+1021e1ce:	b8 68 80 40 10       	mov    eax,0x10408068 ; 0x10408068 '[构建目录]\\kaldi-5.4\\src\\decoder\\lattice-faster-online-decoder.cc'
+1021e1d3:	eb 19                	jmp    0x1021e1ee
+1021e1d5:	3d 68 80 40 10       	cmp    eax,0x10408068 ; 0x10408068 '[构建目录]\\kaldi-5.4\\src\\decoder\\lattice-faster-online-decoder.cc'
+1021e1da:	76 12                	jbe    0x1021e1ee
+1021e1dc:	0f 1f 40 00          	nop    DWORD PTR [eax+0x0]
+1021e1e0:	80 78 ff 2f          	cmp    BYTE PTR [eax-0x1],0x2f
+1021e1e4:	74 08                	je     0x1021e1ee
+1021e1e6:	48                   	dec    eax
+1021e1e7:	3d 68 80 40 10       	cmp    eax,0x10408068 ; 0x10408068 '[构建目录]\\kaldi-5.4\\src\\decoder\\lattice-faster-online-decoder.cc'
+1021e1ec:	77 f2                	ja     0x1021e1e0
+1021e1ee:	89 85 4c ff ff ff    	mov    DWORD PTR [ebp-0xb4],eax
+1021e1f4:	c7 85 50 ff ff ff 3b 	mov    DWORD PTR [ebp-0xb0],0x33b
+1021e1fb:	03 00 00 
+1021e1fe:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [ebp-0x4],0x0
+1021e205:	8b 4b 44             	mov    ecx,DWORD PTR [ebx+0x44]
+1021e208:	2b 4b 40             	sub    ecx,DWORD PTR [ebx+0x40]
+1021e20b:	8b 46 2c             	mov    eax,DWORD PTR [esi+0x2c]
+1021e20e:	2b                   	.byte 0x2b
+1021e20f:	46                   	inc    esi

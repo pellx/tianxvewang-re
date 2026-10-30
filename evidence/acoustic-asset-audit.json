@@ -1,0 +1,20 @@
+{
+  "source": "resources/plugins/ases/ia32/win32/model/recognition/parta/final.mdl",
+  "source_bytes": 52280243,
+  "payload_bytes": 52280235,
+  "source_sha256": "55adfecae5b109dee8d1d3d8a42d36ae0a0f366b0a12399bb2560965869da0e8",
+  "payload_sha256": "09023d899d52e29425f769ed1f0e996a7b4a422319cdf0b786ab58bacea57c71",
+  "carrier": "encr + uint32le payload size + XOR with index mod 8 plus one",
+  "tag_payload_offsets": {
+    "<TransitionModel>": 2,
+    "<Nnet3>": 731512,
+    "<LogSoftmaxComponent>": 52256405,
+    "<Priors>": 52280218
+  },
+  "priors_bytes_hex": "3c 50 72 69 6f 72 73 3e 20 46 56 20 04 00 00 00 00",
+  "input_output_config_lines": [
+    "input-node name=input dim=40",
+    "output-node name=output input=output.affine objective=linear",
+    "output-node name=output-xent input=output-xent.log-softmax objective=linear"
+  ]
+}

@@ -1,0 +1,393 @@
+
+resources\plugins\ases\ia32\win32\lsx-ases.dll:     file format pei-i386
+
+
+Disassembly of section .text:
+
+1017c6e0 <.text+0x17b6e0>:
+1017c6e0:	55                   	push   ebp
+1017c6e1:	8b ec                	mov    ebp,esp
+1017c6e3:	6a ff                	push   0xffffffff
+1017c6e5:	68 7a 41 37 10       	push   0x1037417a
+1017c6ea:	64 a1 00 00 00 00    	mov    eax,fs:0x0
+1017c6f0:	50                   	push   eax
+1017c6f1:	81 ec 98 01 00 00    	sub    esp,0x198
+1017c6f7:	a1 6c 30 46 10       	mov    eax,ds:0x1046306c ; 0x1046306c f32=-0.002943414729088545
+1017c6fc:	33 c5                	xor    eax,ebp
+1017c6fe:	89 45 ec             	mov    DWORD PTR [ebp-0x14],eax
+1017c701:	53                   	push   ebx
+1017c702:	56                   	push   esi
+1017c703:	57                   	push   edi
+1017c704:	50                   	push   eax
+1017c705:	8d 45 f4             	lea    eax,[ebp-0xc]
+1017c708:	64 a3 00 00 00 00    	mov    fs:0x0,eax
+1017c70e:	89 65 f0             	mov    DWORD PTR [ebp-0x10],esp
+1017c711:	8b f9                	mov    edi,ecx
+1017c713:	8b 45 08             	mov    eax,DWORD PTR [ebp+0x8]
+1017c716:	8d 8d 6c fe ff ff    	lea    ecx,[ebp-0x194]
+1017c71c:	6a 01                	push   0x1
+1017c71e:	6a 02                	push   0x2
+1017c720:	89 45 ac             	mov    DWORD PTR [ebp-0x54],eax
+1017c723:	e8 88 df ec ff       	call   0x1004a6b0
+1017c728:	6a 2f                	push   0x2f
+1017c72a:	68 10 11 40 10       	push   0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+1017c72f:	c7 85 5c fe ff ff 00 	mov    DWORD PTR [ebp-0x1a4],0x0
+1017c736:	00 00 00 
+1017c739:	c7 85 60 fe ff ff 78 	mov    DWORD PTR [ebp-0x1a0],0x10401178 ; 0x10401178 'polly::PaScoreIntegration::OnePassScoring'
+1017c740:	11 40 10 
+1017c743:	e8 48 e2 1b 00       	call   0x1033a990
+1017c748:	83 c4 08             	add    esp,0x8
+1017c74b:	85 c0                	test   eax,eax
+1017c74d:	75 07                	jne    0x1017c756
+1017c74f:	b8 10 11 40 10       	mov    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+1017c754:	eb 18                	jmp    0x1017c76e
+1017c756:	3d 10 11 40 10       	cmp    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+1017c75b:	76 11                	jbe    0x1017c76e
+1017c75d:	0f 1f 00             	nop    DWORD PTR [eax]
+1017c760:	80 78 ff 2f          	cmp    BYTE PTR [eax-0x1],0x2f
+1017c764:	74 08                	je     0x1017c76e
+1017c766:	48                   	dec    eax
+1017c767:	3d 10 11 40 10       	cmp    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+1017c76c:	77 f2                	ja     0x1017c760
+1017c76e:	89 85 64 fe ff ff    	mov    DWORD PTR [ebp-0x19c],eax
+1017c774:	c7 85 68 fe ff ff 50 	mov    DWORD PTR [ebp-0x198],0x50
+1017c77b:	00 00 00 
+1017c77e:	68 ec 97 3f 10       	push   0x103f97ec ; 0x103f97ec 'Scoring'
+1017c783:	68 bc 53 3a 10       	push   0x103a53bc
+1017c788:	68 94 af 3e 10       	push   0x103eaf94 ; 0x103eaf94 'SCORER'
+1017c78d:	8d 85 6c fe ff ff    	lea    eax,[ebp-0x194]
+1017c793:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [ebp-0x4],0x0
+1017c79a:	68 c8 53 3a 10       	push   0x103a53c8
+1017c79f:	50                   	push   eax
+1017c7a0:	e8 4b da ea ff       	call   0x1002a1f0
+1017c7a5:	83 c4 08             	add    esp,0x8
+1017c7a8:	50                   	push   eax
+1017c7a9:	e8 42 da ea ff       	call   0x1002a1f0
+1017c7ae:	83 c4 08             	add    esp,0x8
+1017c7b1:	50                   	push   eax
+1017c7b2:	e8 39 da ea ff       	call   0x1002a1f0
+1017c7b7:	83 c4 08             	add    esp,0x8
+1017c7ba:	50                   	push   eax
+1017c7bb:	e8 30 da ea ff       	call   0x1002a1f0
+1017c7c0:	83 c4 08             	add    esp,0x8
+1017c7c3:	c7 45 fc ff ff ff ff 	mov    DWORD PTR [ebp-0x4],0xffffffff
+1017c7ca:	8d 8d 5c fe ff ff    	lea    ecx,[ebp-0x1a4]
+1017c7d0:	e8 6b db ec ff       	call   0x1004a340
+1017c7d5:	8b 9f b4 03 00 00    	mov    ebx,DWORD PTR [edi+0x3b4]
+1017c7db:	8b b7 b0 03 00 00    	mov    esi,DWORD PTR [edi+0x3b0]
+1017c7e1:	3b f3                	cmp    esi,ebx
+1017c7e3:	74 17                	je     0x1017c7fc
+1017c7e5:	8b ce                	mov    ecx,esi
+1017c7e7:	e8 64 cb ec ff       	call   0x10049350
+1017c7ec:	81 c6 9c 00 00 00    	add    esi,0x9c
+1017c7f2:	3b f3                	cmp    esi,ebx
+1017c7f4:	75 ef                	jne    0x1017c7e5
+1017c7f6:	8b b7 b0 03 00 00    	mov    esi,DWORD PTR [edi+0x3b0]
+1017c7fc:	8b 5d ac             	mov    ebx,DWORD PTR [ebp-0x54]
+1017c7ff:	83 ec 10             	sub    esp,0x10
+1017c802:	8b cf                	mov    ecx,edi
+1017c804:	89 b7 b4 03 00 00    	mov    DWORD PTR [edi+0x3b4],esi
+1017c80a:	c7 45 fc 01 00 00 00 	mov    DWORD PTR [ebp-0x4],0x1
+1017c811:	53                   	push   ebx
+1017c812:	e8 89 05 00 00       	call   0x1017cda0
+1017c817:	c7 45 fc ff ff ff ff 	mov    DWORD PTR [ebp-0x4],0xffffffff
+1017c81e:	85 c0                	test   eax,eax
+1017c820:	0f 85 f9 00 00 00    	jne    0x1017c91f
+1017c826:	8b cf                	mov    ecx,edi
+1017c828:	c7 45 fc 05 00 00 00 	mov    DWORD PTR [ebp-0x4],0x5
+1017c82f:	e8 8c 75 00 00       	call   0x10183dc0
+1017c834:	c7 45 fc ff ff ff ff 	mov    DWORD PTR [ebp-0x4],0xffffffff
+1017c83b:	85 c0                	test   eax,eax
+1017c83d:	0f 85 dc 00 00 00    	jne    0x1017c91f
+1017c843:	53                   	push   ebx
+1017c844:	8b cf                	mov    ecx,edi
+1017c846:	c7 45 fc 09 00 00 00 	mov    DWORD PTR [ebp-0x4],0x9
+1017c84d:	e8 3e 78 00 00       	call   0x10184090
+1017c852:	c7 45 fc ff ff ff ff 	mov    DWORD PTR [ebp-0x4],0xffffffff
+1017c859:	85 c0                	test   eax,eax
+1017c85b:	0f 85 be 00 00 00    	jne    0x1017c91f
+1017c861:	53                   	push   ebx
+1017c862:	8b cf                	mov    ecx,edi
+1017c864:	c7 45 fc 0d 00 00 00 	mov    DWORD PTR [ebp-0x4],0xd
+1017c86b:	e8 c0 0a 00 00       	call   0x1017d330
+1017c870:	c7 45 fc ff ff ff ff 	mov    DWORD PTR [ebp-0x4],0xffffffff
+1017c877:	85 c0                	test   eax,eax
+1017c879:	0f 85 a0 00 00 00    	jne    0x1017c91f
+1017c87f:	53                   	push   ebx
+1017c880:	8b cf                	mov    ecx,edi
+1017c882:	c7 45 fc 11 00 00 00 	mov    DWORD PTR [ebp-0x4],0x11
+1017c889:	e8 02 10 00 00       	call   0x1017d890
+1017c88e:	e9 8c 00 00 00       	jmp    0x1017c91f
+1017c893:	68 88 00 00 00       	push   0x88
+1017c898:	68 10 11 40 10       	push   0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+1017c89d:	68 78 11 40 10       	push   0x10401178 ; 0x10401178 'polly::PaScoreIntegration::OnePassScoring'
+1017c8a2:	6a ff                	push   0xffffffff
+1017c8a4:	8d 8d 04 ff ff ff    	lea    ecx,[ebp-0xfc]
+1017c8aa:	c6 45 fc 13          	mov    BYTE PTR [ebp-0x4],0x13
+1017c8ae:	e8 5d d9 ec ff       	call   0x1004a210
+1017c8b3:	68 1c 0f 40 10       	push   0x10400f1c ; 0x10400f1c 'Scoring ComputeParagraphScore throw exception .'
+1017c8b8:	68 bc 53 3a 10       	push   0x103a53bc
+1017c8bd:	68 94 af 3e 10       	push   0x103eaf94 ; 0x103eaf94 'SCORER'
+1017c8c2:	83 c0 10             	add    eax,0x10
+1017c8c5:	c6 45 fc 14          	mov    BYTE PTR [ebp-0x4],0x14
+1017c8c9:	68 c8 53 3a 10       	push   0x103a53c8
+1017c8ce:	50                   	push   eax
+1017c8cf:	e8 1c d9 ea ff       	call   0x1002a1f0
+1017c8d4:	83 c4 08             	add    esp,0x8
+1017c8d7:	50                   	push   eax
+1017c8d8:	e8 13 d9 ea ff       	call   0x1002a1f0
+1017c8dd:	83 c4 08             	add    esp,0x8
+1017c8e0:	50                   	push   eax
+1017c8e1:	e8 0a d9 ea ff       	call   0x1002a1f0
+1017c8e6:	83 c4 08             	add    esp,0x8
+1017c8e9:	50                   	push   eax
+1017c8ea:	e8 01 d9 ea ff       	call   0x1002a1f0
+1017c8ef:	83 c4 08             	add    esp,0x8
+1017c8f2:	c6 45 fc 13          	mov    BYTE PTR [ebp-0x4],0x13
+1017c8f6:	8d 8d 04 ff ff ff    	lea    ecx,[ebp-0xfc]
+1017c8fc:	e8 3f da ec ff       	call   0x1004a340
+1017c901:	8d 45 e4             	lea    eax,[ebp-0x1c]
+1017c904:	c7 45 e0 04 35 39 10 	mov    DWORD PTR [ebp-0x20],0x10393504
+1017c90b:	50                   	push   eax
+1017c90c:	e8 74 d2 19 00       	call   0x10319b85
+1017c911:	83 c4 04             	add    esp,0x4
+1017c914:	b8 1a c9 17 10       	mov    eax,0x1017c91a
+1017c919:	c3                   	ret
+1017c91a:	b8 07 00 00 00       	mov    eax,0x7
+1017c91f:	8b 4d f4             	mov    ecx,DWORD PTR [ebp-0xc]
+1017c922:	64 89 0d 00 00 00 00 	mov    DWORD PTR fs:0x0,ecx
+1017c929:	59                   	pop    ecx
+1017c92a:	5f                   	pop    edi
+1017c92b:	5e                   	pop    esi
+1017c92c:	5b                   	pop    ebx
+1017c92d:	8b 4d ec             	mov    ecx,DWORD PTR [ebp-0x14]
+1017c930:	33 cd                	xor    ecx,ebp
+1017c932:	e8 f6 b8 19 00       	call   0x1031822d
+1017c937:	8b e5                	mov    esp,ebp
+1017c939:	5d                   	pop    ebp
+1017c93a:	c2 04 00             	ret    0x4
+1017c93d:	6a 7e                	push   0x7e
+1017c93f:	68 10 11 40 10       	push   0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+1017c944:	68 78 11 40 10       	push   0x10401178 ; 0x10401178 'polly::PaScoreIntegration::OnePassScoring'
+1017c949:	6a ff                	push   0xffffffff
+1017c94b:	8d 8d 04 ff ff ff    	lea    ecx,[ebp-0xfc]
+1017c951:	c6 45 fc 0f          	mov    BYTE PTR [ebp-0x4],0xf
+1017c955:	e8 b6 d8 ec ff       	call   0x1004a210
+1017c95a:	68 18 12 40 10       	push   0x10401218 ; 0x10401218 'Scoring ComputeSentenceScore throw exception .'
+1017c95f:	68 bc 53 3a 10       	push   0x103a53bc
+1017c964:	68 94 af 3e 10       	push   0x103eaf94 ; 0x103eaf94 'SCORER'
+1017c969:	83 c0 10             	add    eax,0x10
+1017c96c:	c6 45 fc 10          	mov    BYTE PTR [ebp-0x4],0x10
+1017c970:	68 c8 53 3a 10       	push   0x103a53c8
+1017c975:	50                   	push   eax
+1017c976:	e8 75 d8 ea ff       	call   0x1002a1f0
+1017c97b:	83 c4 08             	add    esp,0x8
+1017c97e:	50                   	push   eax
+1017c97f:	e8 6c d8 ea ff       	call   0x1002a1f0
+1017c984:	83 c4 08             	add    esp,0x8
+1017c987:	50                   	push   eax
+1017c988:	e8 63 d8 ea ff       	call   0x1002a1f0
+1017c98d:	83 c4 08             	add    esp,0x8
+1017c990:	50                   	push   eax
+1017c991:	e8 5a d8 ea ff       	call   0x1002a1f0
+1017c996:	83 c4 08             	add    esp,0x8
+1017c999:	c6 45 fc 0f          	mov    BYTE PTR [ebp-0x4],0xf
+1017c99d:	8d 8d 04 ff ff ff    	lea    ecx,[ebp-0xfc]
+1017c9a3:	e8 98 d9 ec ff       	call   0x1004a340
+1017c9a8:	8d 45 d8             	lea    eax,[ebp-0x28]
+1017c9ab:	c7 45 d4 04 35 39 10 	mov    DWORD PTR [ebp-0x2c],0x10393504
+1017c9b2:	50                   	push   eax
+1017c9b3:	e8 cd d1 19 00       	call   0x10319b85
+1017c9b8:	83 c4 04             	add    esp,0x4
+1017c9bb:	b8 c1 c9 17 10       	mov    eax,0x1017c9c1
+1017c9c0:	c3                   	ret
+1017c9c1:	e9 54 ff ff ff       	jmp    0x1017c91a
+1017c9c6:	6a 74                	push   0x74
+1017c9c8:	68 10 11 40 10       	push   0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+1017c9cd:	68 78 11 40 10       	push   0x10401178 ; 0x10401178 'polly::PaScoreIntegration::OnePassScoring'
+1017c9d2:	6a ff                	push   0xffffffff
+1017c9d4:	8d 8d 04 ff ff ff    	lea    ecx,[ebp-0xfc]
+1017c9da:	c6 45 fc 0b          	mov    BYTE PTR [ebp-0x4],0xb
+1017c9de:	e8 2d d8 ec ff       	call   0x1004a210
+1017c9e3:	68 48 12 40 10       	push   0x10401248 ; 0x10401248 'Scoring ComputeWordInfo throw exception .'
+1017c9e8:	68 bc 53 3a 10       	push   0x103a53bc
+1017c9ed:	68 94 af 3e 10       	push   0x103eaf94 ; 0x103eaf94 'SCORER'
+1017c9f2:	83 c0 10             	add    eax,0x10
+1017c9f5:	c6 45 fc 0c          	mov    BYTE PTR [ebp-0x4],0xc
+1017c9f9:	68 c8 53 3a 10       	push   0x103a53c8
+1017c9fe:	50                   	push   eax
+1017c9ff:	e8 ec d7 ea ff       	call   0x1002a1f0
+1017ca04:	83 c4 08             	add    esp,0x8
+1017ca07:	50                   	push   eax
+1017ca08:	e8 e3 d7 ea ff       	call   0x1002a1f0
+1017ca0d:	83 c4 08             	add    esp,0x8
+1017ca10:	50                   	push   eax
+1017ca11:	e8 da d7 ea ff       	call   0x1002a1f0
+1017ca16:	83 c4 08             	add    esp,0x8
+1017ca19:	50                   	push   eax
+1017ca1a:	e8 d1 d7 ea ff       	call   0x1002a1f0
+1017ca1f:	83 c4 08             	add    esp,0x8
+1017ca22:	c6 45 fc 0b          	mov    BYTE PTR [ebp-0x4],0xb
+1017ca26:	8d 8d 04 ff ff ff    	lea    ecx,[ebp-0xfc]
+1017ca2c:	e8 0f d9 ec ff       	call   0x1004a340
+1017ca31:	8d 45 cc             	lea    eax,[ebp-0x34]
+1017ca34:	c7 45 c8 04 35 39 10 	mov    DWORD PTR [ebp-0x38],0x10393504
+1017ca3b:	50                   	push   eax
+1017ca3c:	e8 44 d1 19 00       	call   0x10319b85
+1017ca41:	83 c4 04             	add    esp,0x4
+1017ca44:	b8 4a ca 17 10       	mov    eax,0x1017ca4a
+1017ca49:	c3                   	ret
+1017ca4a:	e9 cb fe ff ff       	jmp    0x1017c91a
+1017ca4f:	6a 6a                	push   0x6a
+1017ca51:	68 10 11 40 10       	push   0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+1017ca56:	68 78 11 40 10       	push   0x10401178 ; 0x10401178 'polly::PaScoreIntegration::OnePassScoring'
+1017ca5b:	6a ff                	push   0xffffffff
+1017ca5d:	8d 8d 04 ff ff ff    	lea    ecx,[ebp-0xfc]
+1017ca63:	c6 45 fc 07          	mov    BYTE PTR [ebp-0x4],0x7
+1017ca67:	e8 a4 d7 ec ff       	call   0x1004a210
+1017ca6c:	68 74 12 40 10       	push   0x10401274 ; 0x10401274 'Scoring ComputePhoneInfo throw exception .'
+1017ca71:	68 bc 53 3a 10       	push   0x103a53bc
+1017ca76:	68 94 af 3e 10       	push   0x103eaf94 ; 0x103eaf94 'SCORER'
+1017ca7b:	83 c0 10             	add    eax,0x10
+1017ca7e:	c6 45 fc 08          	mov    BYTE PTR [ebp-0x4],0x8
+1017ca82:	68 c8 53 3a 10       	push   0x103a53c8
+1017ca87:	50                   	push   eax
+1017ca88:	e8 63 d7 ea ff       	call   0x1002a1f0
+1017ca8d:	83 c4 08             	add    esp,0x8
+1017ca90:	50                   	push   eax
+1017ca91:	e8 5a d7 ea ff       	call   0x1002a1f0
+1017ca96:	83 c4 08             	add    esp,0x8
+1017ca99:	50                   	push   eax
+1017ca9a:	e8 51 d7 ea ff       	call   0x1002a1f0
+1017ca9f:	83 c4 08             	add    esp,0x8
+1017caa2:	50                   	push   eax
+1017caa3:	e8 48 d7 ea ff       	call   0x1002a1f0
+1017caa8:	83 c4 08             	add    esp,0x8
+1017caab:	c6 45 fc 07          	mov    BYTE PTR [ebp-0x4],0x7
+1017caaf:	8d 8d 04 ff ff ff    	lea    ecx,[ebp-0xfc]
+1017cab5:	e8 86 d8 ec ff       	call   0x1004a340
+1017caba:	8d 45 c0             	lea    eax,[ebp-0x40]
+1017cabd:	c7 45 bc 04 35 39 10 	mov    DWORD PTR [ebp-0x44],0x10393504
+1017cac4:	50                   	push   eax
+1017cac5:	e8 bb d0 19 00       	call   0x10319b85
+1017caca:	83 c4 04             	add    esp,0x4
+1017cacd:	b8 d3 ca 17 10       	mov    eax,0x1017cad3
+1017cad2:	c3                   	ret
+1017cad3:	e9 42 fe ff ff       	jmp    0x1017c91a
+1017cad8:	6a 60                	push   0x60
+1017cada:	68 10 11 40 10       	push   0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+1017cadf:	68 78 11 40 10       	push   0x10401178 ; 0x10401178 'polly::PaScoreIntegration::OnePassScoring'
+1017cae4:	6a ff                	push   0xffffffff
+1017cae6:	8d 8d 04 ff ff ff    	lea    ecx,[ebp-0xfc]
+1017caec:	c6 45 fc 03          	mov    BYTE PTR [ebp-0x4],0x3
+1017caf0:	e8 1b d7 ec ff       	call   0x1004a210
+1017caf5:	68 a0 12 40 10       	push   0x104012a0 ; 0x104012a0 'Scoring DoPreprocess throw exception .'
+1017cafa:	68 bc 53 3a 10       	push   0x103a53bc
+1017caff:	68 94 af 3e 10       	push   0x103eaf94 ; 0x103eaf94 'SCORER'
+1017cb04:	83 c0 10             	add    eax,0x10
+1017cb07:	c6 45 fc 04          	mov    BYTE PTR [ebp-0x4],0x4
+1017cb0b:	68 c8 53 3a 10       	push   0x103a53c8
+1017cb10:	50                   	push   eax
+1017cb11:	e8 da d6 ea ff       	call   0x1002a1f0
+1017cb16:	83 c4 08             	add    esp,0x8
+1017cb19:	50                   	push   eax
+1017cb1a:	e8 d1 d6 ea ff       	call   0x1002a1f0
+1017cb1f:	83 c4 08             	add    esp,0x8
+1017cb22:	50                   	push   eax
+1017cb23:	e8 c8 d6 ea ff       	call   0x1002a1f0
+1017cb28:	83 c4 08             	add    esp,0x8
+1017cb2b:	50                   	push   eax
+1017cb2c:	e8 bf d6 ea ff       	call   0x1002a1f0
+1017cb31:	83 c4 08             	add    esp,0x8
+1017cb34:	c6 45 fc 03          	mov    BYTE PTR [ebp-0x4],0x3
+1017cb38:	8d 8d 04 ff ff ff    	lea    ecx,[ebp-0xfc]
+1017cb3e:	e8 fd d7 ec ff       	call   0x1004a340
+1017cb43:	8d 45 b4             	lea    eax,[ebp-0x4c]
+1017cb46:	c7 45 b0 04 35 39 10 	mov    DWORD PTR [ebp-0x50],0x10393504
+1017cb4d:	50                   	push   eax
+1017cb4e:	e8 32 d0 19 00       	call   0x10319b85
+1017cb53:	83 c4 04             	add    esp,0x4
+1017cb56:	b8 1a c9 17 10       	mov    eax,0x1017c91a
+1017cb5b:	c3                   	ret
+1017cb5c:	cc                   	int3
+1017cb5d:	cc                   	int3
+1017cb5e:	cc                   	int3
+1017cb5f:	cc                   	int3
+1017cb60:	55                   	push   ebp
+1017cb61:	8b ec                	mov    ebp,esp
+1017cb63:	6a ff                	push   0xffffffff
+1017cb65:	68 e6 12 36 10       	push   0x103612e6
+1017cb6a:	64 a1 00 00 00 00    	mov    eax,fs:0x0
+1017cb70:	50                   	push   eax
+1017cb71:	81 ec 54 01 00 00    	sub    esp,0x154
+1017cb77:	53                   	push   ebx
+1017cb78:	56                   	push   esi
+1017cb79:	57                   	push   edi
+1017cb7a:	a1 6c 30 46 10       	mov    eax,ds:0x1046306c ; 0x1046306c f32=-0.002943414729088545
+1017cb7f:	33 c5                	xor    eax,ebp
+1017cb81:	50                   	push   eax
+1017cb82:	8d 45 f4             	lea    eax,[ebp-0xc]
+1017cb85:	64 a3 00 00 00 00    	mov    fs:0x0,eax
+1017cb8b:	8b d9                	mov    ebx,ecx
+1017cb8d:	6a 01                	push   0x1
+1017cb8f:	6a 02                	push   0x2
+1017cb91:	8d 8d 58 ff ff ff    	lea    ecx,[ebp-0xa8]
+1017cb97:	e8 14 db ec ff       	call   0x1004a6b0
+1017cb9c:	6a 2f                	push   0x2f
+1017cb9e:	68 10 11 40 10       	push   0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+1017cba3:	c7 85 48 ff ff ff 00 	mov    DWORD PTR [ebp-0xb8],0x0
+1017cbaa:	00 00 00 
+1017cbad:	c7 85 4c ff ff ff dc 	mov    DWORD PTR [ebp-0xb4],0x10400edc ; 0x10400edc 'polly::PaScoreIntegration::GetBestPass'
+1017cbb4:	0e 40 10 
+1017cbb7:	e8 d4 dd 1b 00       	call   0x1033a990
+1017cbbc:	83 c4 08             	add    esp,0x8
+1017cbbf:	85 c0                	test   eax,eax
+1017cbc1:	75 07                	jne    0x1017cbca
+1017cbc3:	b8 10 11 40 10       	mov    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+1017cbc8:	eb 15                	jmp    0x1017cbdf
+1017cbca:	3d 10 11 40 10       	cmp    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+1017cbcf:	76 0e                	jbe    0x1017cbdf
+1017cbd1:	80 78 ff 2f          	cmp    BYTE PTR [eax-0x1],0x2f
+1017cbd5:	74 08                	je     0x1017cbdf
+1017cbd7:	48                   	dec    eax
+1017cbd8:	3d 10 11 40 10       	cmp    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+1017cbdd:	77 f2                	ja     0x1017cbd1
+1017cbdf:	89 85 50 ff ff ff    	mov    DWORD PTR [ebp-0xb0],eax
+1017cbe5:	c7 85 54 ff ff ff 90 	mov    DWORD PTR [ebp-0xac],0x90
+1017cbec:	00 00 00 
+1017cbef:	68 04 0f 40 10       	push   0x10400f04 ; 0x10400f04 '[GetBestPass] begin.'
+1017cbf4:	68 bc 53 3a 10       	push   0x103a53bc
+1017cbf9:	68 54 11 40 10       	push   0x10401154 ; 0x10401154 'PA_SCORE_INTEG'
+1017cbfe:	8d 85 58 ff ff ff    	lea    eax,[ebp-0xa8]
+1017cc04:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [ebp-0x4],0x0
+1017cc0b:	68 c8 53 3a 10       	push   0x103a53c8
+1017cc10:	50                   	push   eax
+1017cc11:	e8 da d5 ea ff       	call   0x1002a1f0
+1017cc16:	83 c4 08             	add    esp,0x8
+1017cc19:	50                   	push   eax
+1017cc1a:	e8 d1 d5 ea ff       	call   0x1002a1f0
+1017cc1f:	83 c4 08             	add    esp,0x8
+1017cc22:	50                   	push   eax
+1017cc23:	e8 c8 d5 ea ff       	call   0x1002a1f0
+1017cc28:	83 c4 08             	add    esp,0x8
+1017cc2b:	50                   	push   eax
+1017cc2c:	e8 bf d5 ea ff       	call   0x1002a1f0
+1017cc31:	83 c4 08             	add    esp,0x8
+1017cc34:	c7 45 fc ff ff ff ff 	mov    DWORD PTR [ebp-0x4],0xffffffff
+1017cc3b:	8d 8d 48 ff ff ff    	lea    ecx,[ebp-0xb8]
+1017cc41:	e8 fa d6 ec ff       	call   0x1004a340
+1017cc46:	8b 8b a8 03 00 00    	mov    ecx,DWORD PTR [ebx+0x3a8]
+1017cc4c:	b8 c1 de 31 35       	mov    eax,0x3531dec1
+1017cc51:	2b 8b a4 03 00 00    	sub    ecx,DWORD PTR [ebx+0x3a4]
+1017cc57:	f7 e9                	imul   ecx
+1017cc59:	c1 fa 06             	sar    edx,0x6
+1017cc5c:	8b c2                	mov    eax,edx
+1017cc5e:	c1 e8 1f             	shr    eax,0x1f
+1017cc61:	03 c2                	add    eax,edx
+1017cc63:	89 45 f0             	mov    DWORD PTR [ebp-0x10],eax
+1017cc66:	83 f8 01             	cmp    eax,0x1
+1017cc69:	0f 85 91 00 00 00    	jne    0x1017cd00
+1017cc6f:	68 92 00 00 00       	push   0x92
+1017cc74:	68 10 11 40 10       	push   0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+1017cc79:	68 dc 0e 40 10       	push   0x10400edc ; 0x10400edc 'polly::PaScoreIntegration::GetBestPass'
+1017cc7e:	6a 00                	push   0x0

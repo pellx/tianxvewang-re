@@ -1,0 +1,792 @@
+
+resources\plugins\ases\ia32\win32\lsx-ases.dll:     file format pei-i386
+
+
+Disassembly of section .text:
+
+10182850 <.text+0x181850>:
+10182850:	00 00                	add    BYTE PTR [eax],al
+10182852:	00 00                	add    BYTE PTR [eax],al
+10182854:	59                   	pop    ecx
+10182855:	5f                   	pop    edi
+10182856:	5e                   	pop    esi
+10182857:	5b                   	pop    ebx
+10182858:	8b 4d f0             	mov    ecx,DWORD PTR [ebp-0x10]
+1018285b:	33 cd                	xor    ecx,ebp
+1018285d:	e8 cb 59 19 00       	call   0x1031822d
+10182862:	8b e5                	mov    esp,ebp
+10182864:	5d                   	pop    ebp
+10182865:	c3                   	ret
+10182866:	cc                   	int3
+10182867:	cc                   	int3
+10182868:	cc                   	int3
+10182869:	cc                   	int3
+1018286a:	cc                   	int3
+1018286b:	cc                   	int3
+1018286c:	cc                   	int3
+1018286d:	cc                   	int3
+1018286e:	cc                   	int3
+1018286f:	cc                   	int3
+10182870:	55                   	push   ebp
+10182871:	8b ec                	mov    ebp,esp
+10182873:	6a ff                	push   0xffffffff
+10182875:	68 7c 49 37 10       	push   0x1037497c
+1018287a:	64 a1 00 00 00 00    	mov    eax,fs:0x0
+10182880:	50                   	push   eax
+10182881:	81 ec 68 01 00 00    	sub    esp,0x168
+10182887:	a1 6c 30 46 10       	mov    eax,ds:0x1046306c ; 0x1046306c f32=-0.002943414729088545
+1018288c:	33 c5                	xor    eax,ebp
+1018288e:	89 45 f0             	mov    DWORD PTR [ebp-0x10],eax
+10182891:	53                   	push   ebx
+10182892:	56                   	push   esi
+10182893:	57                   	push   edi
+10182894:	50                   	push   eax
+10182895:	8d 45 f4             	lea    eax,[ebp-0xc]
+10182898:	64 a3 00 00 00 00    	mov    fs:0x0,eax
+1018289e:	8b d9                	mov    ebx,ecx
+101828a0:	6a 01                	push   0x1
+101828a2:	6a 02                	push   0x2
+101828a4:	8d 8d 44 ff ff ff    	lea    ecx,[ebp-0xbc]
+101828aa:	e8 01 7e ec ff       	call   0x1004a6b0
+101828af:	6a 2f                	push   0x2f
+101828b1:	68 10 11 40 10       	push   0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+101828b6:	c7 85 34 ff ff ff 00 	mov    DWORD PTR [ebp-0xcc],0x0
+101828bd:	00 00 00 
+101828c0:	c7 85 38 ff ff ff 7c 	mov    DWORD PTR [ebp-0xc8],0x10401a7c ; 0x10401a7c 'polly::PaScoreIntegration::__PhoneScoreInfo'
+101828c7:	1a 40 10 
+101828ca:	e8 c1 80 1b 00       	call   0x1033a990
+101828cf:	83 c4 08             	add    esp,0x8
+101828d2:	85 c0                	test   eax,eax
+101828d4:	75 07                	jne    0x101828dd
+101828d6:	b8 10 11 40 10       	mov    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+101828db:	eb 15                	jmp    0x101828f2
+101828dd:	3d 10 11 40 10       	cmp    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+101828e2:	76 0e                	jbe    0x101828f2
+101828e4:	80 78 ff 2f          	cmp    BYTE PTR [eax-0x1],0x2f
+101828e8:	74 08                	je     0x101828f2
+101828ea:	48                   	dec    eax
+101828eb:	3d 10 11 40 10       	cmp    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+101828f0:	77 f2                	ja     0x101828e4
+101828f2:	89 85 3c ff ff ff    	mov    DWORD PTR [ebp-0xc4],eax
+101828f8:	c7 85 40 ff ff ff bf 	mov    DWORD PTR [ebp-0xc0],0x3bf
+101828ff:	03 00 00 
+10182902:	68 a8 1a 40 10       	push   0x10401aa8 ; 0x10401aa8 '__PhoneScoreInfo begin.'
+10182907:	68 bc 53 3a 10       	push   0x103a53bc
+1018290c:	68 54 11 40 10       	push   0x10401154 ; 0x10401154 'PA_SCORE_INTEG'
+10182911:	8d 85 44 ff ff ff    	lea    eax,[ebp-0xbc]
+10182917:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [ebp-0x4],0x0
+1018291e:	68 c8 53 3a 10       	push   0x103a53c8
+10182923:	50                   	push   eax
+10182924:	e8 c7 78 ea ff       	call   0x1002a1f0
+10182929:	83 c4 08             	add    esp,0x8
+1018292c:	50                   	push   eax
+1018292d:	e8 be 78 ea ff       	call   0x1002a1f0
+10182932:	83 c4 08             	add    esp,0x8
+10182935:	50                   	push   eax
+10182936:	e8 b5 78 ea ff       	call   0x1002a1f0
+1018293b:	83 c4 08             	add    esp,0x8
+1018293e:	50                   	push   eax
+1018293f:	e8 ac 78 ea ff       	call   0x1002a1f0
+10182944:	83 c4 08             	add    esp,0x8
+10182947:	c7 45 fc ff ff ff ff 	mov    DWORD PTR [ebp-0x4],0xffffffff
+1018294e:	8d 8d 34 ff ff ff    	lea    ecx,[ebp-0xcc]
+10182954:	e8 e7 79 ec ff       	call   0x1004a340
+10182959:	8b 83 68 04 00 00    	mov    eax,DWORD PTR [ebx+0x468]
+1018295f:	33 c9                	xor    ecx,ecx
+10182961:	89 83 6c 04 00 00    	mov    DWORD PTR [ebx+0x46c],eax
+10182967:	33 f6                	xor    esi,esi
+10182969:	8b 83 80 04 00 00    	mov    eax,DWORD PTR [ebx+0x480]
+1018296f:	89 83 84 04 00 00    	mov    DWORD PTR [ebx+0x484],eax
+10182975:	b8 ab aa aa 2a       	mov    eax,0x2aaaaaab
+1018297a:	8b bb 1c 03 00 00    	mov    edi,DWORD PTR [ebx+0x31c]
+10182980:	89 4d e0             	mov    DWORD PTR [ebp-0x20],ecx
+10182983:	8b 8b 20 03 00 00    	mov    ecx,DWORD PTR [ebx+0x320]
+10182989:	2b cf                	sub    ecx,edi
+1018298b:	89 75 dc             	mov    DWORD PTR [ebp-0x24],esi
+1018298e:	f7 e9                	imul   ecx
+10182990:	d1 fa                	sar    edx,1
+10182992:	8b c2                	mov    eax,edx
+10182994:	c1 e8 1f             	shr    eax,0x1f
+10182997:	03 c2                	add    eax,edx
+10182999:	0f 84 a0 02 00 00    	je     0x10182c3f
+1018299f:	33 d2                	xor    edx,edx
+101829a1:	89 55 e4             	mov    DWORD PTR [ebp-0x1c],edx
+101829a4:	8b 44 3a 04          	mov    eax,DWORD PTR [edx+edi*1+0x4]
+101829a8:	2b 04 3a             	sub    eax,DWORD PTR [edx+edi*1]
+101829ab:	8b 4d dc             	mov    ecx,DWORD PTR [ebp-0x24]
+101829ae:	8b d1                	mov    edx,ecx
+101829b0:	c1 f8 02             	sar    eax,0x2
+101829b3:	03 d0                	add    edx,eax
+101829b5:	89 4d e8             	mov    DWORD PTR [ebp-0x18],ecx
+101829b8:	8b 83 84 04 00 00    	mov    eax,DWORD PTR [ebx+0x484]
+101829be:	89 55 dc             	mov    DWORD PTR [ebp-0x24],edx
+101829c1:	4a                   	dec    edx
+101829c2:	89 55 ec             	mov    DWORD PTR [ebp-0x14],edx
+101829c5:	39 83 88 04 00 00    	cmp    DWORD PTR [ebx+0x488],eax
+101829cb:	74 0e                	je     0x101829db
+101829cd:	89 08                	mov    DWORD PTR [eax],ecx
+101829cf:	89 50 04             	mov    DWORD PTR [eax+0x4],edx
+101829d2:	83 83 84 04 00 00 08 	add    DWORD PTR [ebx+0x484],0x8
+101829d9:	eb 10                	jmp    0x101829eb
+101829db:	8d 4d e8             	lea    ecx,[ebp-0x18]
+101829de:	51                   	push   ecx
+101829df:	50                   	push   eax
+101829e0:	8d 8b 80 04 00 00    	lea    ecx,[ebx+0x480]
+101829e6:	e8 c5 ef f4 ff       	call   0x100d19b0
+101829eb:	8b 83 1c 03 00 00    	mov    eax,DWORD PTR [ebx+0x31c]
+101829f1:	33 d2                	xor    edx,edx
+101829f3:	8b 7d e4             	mov    edi,DWORD PTR [ebp-0x1c]
+101829f6:	0f 57 d2             	xorps  xmm2,xmm2
+101829f9:	0f 57 c9             	xorps  xmm1,xmm1
+101829fc:	8b 4c 38 04          	mov    ecx,DWORD PTR [eax+edi*1+0x4]
+10182a00:	2b 0c 38             	sub    ecx,DWORD PTR [eax+edi*1]
+10182a03:	c1 f9 02             	sar    ecx,0x2
+10182a06:	85 c9                	test   ecx,ecx
+10182a08:	74 2f                	je     0x10182a39
+10182a0a:	8b 83 14 03 00 00    	mov    eax,DWORD PTR [ebx+0x314]
+10182a10:	8b bb 10 03 00 00    	mov    edi,DWORD PTR [ebx+0x310]
+10182a16:	2b c7                	sub    eax,edi
+10182a18:	c1 f8 02             	sar    eax,0x2
+10182a1b:	0f 1f 44 00 00       	nop    DWORD PTR [eax+eax*1+0x0]
+10182a20:	3b f0                	cmp    esi,eax
+10182a22:	0f 8d bf 00 00 00    	jge    0x10182ae7
+10182a28:	f3 0f 58 14 b7       	addss  xmm2,DWORD PTR [edi+esi*4]
+10182a2d:	42                   	inc    edx
+10182a2e:	46                   	inc    esi
+10182a2f:	0f 28 ca             	movaps xmm1,xmm2
+10182a32:	3b d1                	cmp    edx,ecx
+10182a34:	72 ea                	jb     0x10182a20
+10182a36:	8b 7d e4             	mov    edi,DWORD PTR [ebp-0x1c]
+10182a39:	66 0f 6e c1          	movd   xmm0,ecx
+10182a3d:	f3 0f e6 c0          	cvtdq2pd xmm0,xmm0
+10182a41:	c1 e9 1f             	shr    ecx,0x1f
+10182a44:	8b 83 2c 03 00 00    	mov    eax,DWORD PTR [ebx+0x32c]
+10182a4a:	8b 55 e0             	mov    edx,DWORD PTR [ebp-0x20]
+10182a4d:	f2 0f 58 04 cd 40 ad 	addsd  xmm0,QWORD PTR [ecx*8+0x1041ad40] ; 0x1041ad40 f32=0.0
+10182a54:	41 10 
+10182a56:	8b 8b 28 03 00 00    	mov    ecx,DWORD PTR [ebx+0x328]
+10182a5c:	2b c1                	sub    eax,ecx
+10182a5e:	c1 f8 02             	sar    eax,0x2
+10182a61:	66 0f 5a c0          	cvtpd2ps xmm0,xmm0
+10182a65:	f3 0f 5e c8          	divss  xmm1,xmm0
+10182a69:	f3 0f 11 4d e4       	movss  DWORD PTR [ebp-0x1c],xmm1
+10182a6e:	3b d0                	cmp    edx,eax
+10182a70:	0f 83 50 01 00 00    	jae    0x10182bc6
+10182a76:	83 3c 91 0a          	cmp    DWORD PTR [ecx+edx*4],0xa
+10182a7a:	7f 08                	jg     0x10182a84
+10182a7c:	0f 57 c9             	xorps  xmm1,xmm1
+10182a7f:	f3 0f 11 4d e4       	movss  DWORD PTR [ebp-0x1c],xmm1
+10182a84:	8b 83 6c 04 00 00    	mov    eax,DWORD PTR [ebx+0x46c]
+10182a8a:	8d 8b 68 04 00 00    	lea    ecx,[ebx+0x468]
+10182a90:	39 41 08             	cmp    DWORD PTR [ecx+0x8],eax
+10182a93:	74 0c                	je     0x10182aa1
+10182a95:	f3 0f 11 08          	movss  DWORD PTR [eax],xmm1
+10182a99:	83 c0 04             	add    eax,0x4
+10182a9c:	89 41 04             	mov    DWORD PTR [ecx+0x4],eax
+10182a9f:	eb 0d                	jmp    0x10182aae
+10182aa1:	8d 55 e4             	lea    edx,[ebp-0x1c]
+10182aa4:	52                   	push   edx
+10182aa5:	50                   	push   eax
+10182aa6:	e8 05 ec ec ff       	call   0x100516b0
+10182aab:	8b 55 e0             	mov    edx,DWORD PTR [ebp-0x20]
+10182aae:	8b 8b 20 03 00 00    	mov    ecx,DWORD PTR [ebx+0x320]
+10182ab4:	83 c7 0c             	add    edi,0xc
+10182ab7:	42                   	inc    edx
+10182ab8:	89 7d e4             	mov    DWORD PTR [ebp-0x1c],edi
+10182abb:	8b bb 1c 03 00 00    	mov    edi,DWORD PTR [ebx+0x31c]
+10182ac1:	b8 ab aa aa 2a       	mov    eax,0x2aaaaaab
+10182ac6:	89 55 e0             	mov    DWORD PTR [ebp-0x20],edx
+10182ac9:	2b cf                	sub    ecx,edi
+10182acb:	f7 e9                	imul   ecx
+10182acd:	d1 fa                	sar    edx,1
+10182acf:	8b c2                	mov    eax,edx
+10182ad1:	c1 e8 1f             	shr    eax,0x1f
+10182ad4:	03 c2                	add    eax,edx
+10182ad6:	39 45 e0             	cmp    DWORD PTR [ebp-0x20],eax
+10182ad9:	0f 83 60 01 00 00    	jae    0x10182c3f
+10182adf:	8b 55 e4             	mov    edx,DWORD PTR [ebp-0x1c]
+10182ae2:	e9 bd fe ff ff       	jmp    0x101829a4
+10182ae7:	6a 01                	push   0x1
+10182ae9:	6a 02                	push   0x2
+10182aeb:	8d 8d 44 ff ff ff    	lea    ecx,[ebp-0xbc]
+10182af1:	e8 ba 7b ec ff       	call   0x1004a6b0
+10182af6:	6a 2f                	push   0x2f
+10182af8:	68 10 11 40 10       	push   0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+10182afd:	c7 85 34 ff ff ff 00 	mov    DWORD PTR [ebp-0xcc],0x0
+10182b04:	00 00 00 
+10182b07:	c7 85 38 ff ff ff 7c 	mov    DWORD PTR [ebp-0xc8],0x10401a7c ; 0x10401a7c 'polly::PaScoreIntegration::__PhoneScoreInfo'
+10182b0e:	1a 40 10 
+10182b11:	e8 7a 7e 1b 00       	call   0x1033a990
+10182b16:	83 c4 08             	add    esp,0x8
+10182b19:	85 c0                	test   eax,eax
+10182b1b:	75 07                	jne    0x10182b24
+10182b1d:	b8 10 11 40 10       	mov    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+10182b22:	eb 1a                	jmp    0x10182b3e
+10182b24:	3d 10 11 40 10       	cmp    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+10182b29:	76 13                	jbe    0x10182b3e
+10182b2b:	0f 1f 44 00 00       	nop    DWORD PTR [eax+eax*1+0x0]
+10182b30:	80 78 ff 2f          	cmp    BYTE PTR [eax-0x1],0x2f
+10182b34:	74 08                	je     0x10182b3e
+10182b36:	48                   	dec    eax
+10182b37:	3d 10 11 40 10       	cmp    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+10182b3c:	77 f2                	ja     0x10182b30
+10182b3e:	89 85 3c ff ff ff    	mov    DWORD PTR [ebp-0xc4],eax
+10182b44:	c7 85 40 ff ff ff d9 	mov    DWORD PTR [ebp-0xc0],0x3d9
+10182b4b:	03 00 00 
+10182b4e:	c7 45 fc 01 00 00 00 	mov    DWORD PTR [ebp-0x4],0x1
+10182b55:	68 58 1b 40 10       	push   0x10401b58 ; 0x10401b58 '] frame_idx is bound the array frame_gop.'
+10182b5a:	6a 06                	push   0x6
+10182b5c:	68 3c 1b 40 10       	push   0x10401b3c ; 0x10401b3c '__PhoneScoreInfo [err_code='
+10182b61:	68 bc 53 3a 10       	push   0x103a53bc
+10182b66:	68 54 11 40 10       	push   0x10401154 ; 0x10401154 'PA_SCORE_INTEG'
+10182b6b:	8d 85 44 ff ff ff    	lea    eax,[ebp-0xbc]
+10182b71:	68 c8 53 3a 10       	push   0x103a53c8
+10182b76:	50                   	push   eax
+10182b77:	e8 74 76 ea ff       	call   0x1002a1f0
+10182b7c:	83 c4 08             	add    esp,0x8
+10182b7f:	50                   	push   eax
+10182b80:	e8 6b 76 ea ff       	call   0x1002a1f0
+10182b85:	83 c4 08             	add    esp,0x8
+10182b88:	50                   	push   eax
+10182b89:	e8 62 76 ea ff       	call   0x1002a1f0
+10182b8e:	83 c4 08             	add    esp,0x8
+10182b91:	50                   	push   eax
+10182b92:	e8 59 76 ea ff       	call   0x1002a1f0
+10182b97:	83 c4 08             	add    esp,0x8
+10182b9a:	8b c8                	mov    ecx,eax
+10182b9c:	e8 af 2d ea ff       	call   0x10025950
+10182ba1:	50                   	push   eax
+10182ba2:	e8 49 76 ea ff       	call   0x1002a1f0
+10182ba7:	83 c4 08             	add    esp,0x8
+10182baa:	c7 45 fc ff ff ff ff 	mov    DWORD PTR [ebp-0x4],0xffffffff
+10182bb1:	8d 8d 34 ff ff ff    	lea    ecx,[ebp-0xcc]
+10182bb7:	e8 84 77 ec ff       	call   0x1004a340
+10182bbc:	b8 06 00 00 00       	mov    eax,0x6
+10182bc1:	e9 34 01 00 00       	jmp    0x10182cfa
+10182bc6:	6a 01                	push   0x1
+10182bc8:	6a 02                	push   0x2
+10182bca:	8d 8d 44 ff ff ff    	lea    ecx,[ebp-0xbc]
+10182bd0:	e8 db 7a ec ff       	call   0x1004a6b0
+10182bd5:	6a 2f                	push   0x2f
+10182bd7:	68 10 11 40 10       	push   0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+10182bdc:	c7 85 34 ff ff ff 00 	mov    DWORD PTR [ebp-0xcc],0x0
+10182be3:	00 00 00 
+10182be6:	c7 85 38 ff ff ff 7c 	mov    DWORD PTR [ebp-0xc8],0x10401a7c ; 0x10401a7c 'polly::PaScoreIntegration::__PhoneScoreInfo'
+10182bed:	1a 40 10 
+10182bf0:	e8 9b 7d 1b 00       	call   0x1033a990
+10182bf5:	83 c4 08             	add    esp,0x8
+10182bf8:	85 c0                	test   eax,eax
+10182bfa:	75 07                	jne    0x10182c03
+10182bfc:	b8 10 11 40 10       	mov    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+10182c01:	eb 1b                	jmp    0x10182c1e
+10182c03:	3d 10 11 40 10       	cmp    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+10182c08:	76 14                	jbe    0x10182c1e
+10182c0a:	66 0f 1f 44 00 00    	nop    WORD PTR [eax+eax*1+0x0]
+10182c10:	80 78 ff 2f          	cmp    BYTE PTR [eax-0x1],0x2f
+10182c14:	74 08                	je     0x10182c1e
+10182c16:	48                   	dec    eax
+10182c17:	3d 10 11 40 10       	cmp    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+10182c1c:	77 f2                	ja     0x10182c10
+10182c1e:	89 85 3c ff ff ff    	mov    DWORD PTR [ebp-0xc4],eax
+10182c24:	c7 85 40 ff ff ff e2 	mov    DWORD PTR [ebp-0xc0],0x3e2
+10182c2b:	03 00 00 
+10182c2e:	c7 45 fc 02 00 00 00 	mov    DWORD PTR [ebp-0x4],0x2
+10182c35:	68 1c 1b 40 10       	push   0x10401b1c ; 0x10401b1c '] i is bound the array phones.'
+10182c3a:	e9 1b ff ff ff       	jmp    0x10182b5a
+10182c3f:	6a 01                	push   0x1
+10182c41:	6a 02                	push   0x2
+10182c43:	8d 8d 9c fe ff ff    	lea    ecx,[ebp-0x164]
+10182c49:	e8 62 7a ec ff       	call   0x1004a6b0
+10182c4e:	6a 2f                	push   0x2f
+10182c50:	68 10 11 40 10       	push   0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+10182c55:	c7 85 8c fe ff ff 00 	mov    DWORD PTR [ebp-0x174],0x0
+10182c5c:	00 00 00 
+10182c5f:	c7 85 90 fe ff ff 7c 	mov    DWORD PTR [ebp-0x170],0x10401a7c ; 0x10401a7c 'polly::PaScoreIntegration::__PhoneScoreInfo'
+10182c66:	1a 40 10 
+10182c69:	e8 22 7d 1b 00       	call   0x1033a990
+10182c6e:	83 c4 08             	add    esp,0x8
+10182c71:	85 c0                	test   eax,eax
+10182c73:	75 07                	jne    0x10182c7c
+10182c75:	b8 10 11 40 10       	mov    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+10182c7a:	eb 15                	jmp    0x10182c91
+10182c7c:	3d 10 11 40 10       	cmp    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+10182c81:	76 0e                	jbe    0x10182c91
+10182c83:	80 78 ff 2f          	cmp    BYTE PTR [eax-0x1],0x2f
+10182c87:	74 08                	je     0x10182c91
+10182c89:	48                   	dec    eax
+10182c8a:	3d 10 11 40 10       	cmp    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+10182c8f:	77 f2                	ja     0x10182c83
+10182c91:	89 85 94 fe ff ff    	mov    DWORD PTR [ebp-0x16c],eax
+10182c97:	c7 85 98 fe ff ff f1 	mov    DWORD PTR [ebp-0x168],0x3f1
+10182c9e:	03 00 00 
+10182ca1:	68 04 1b 40 10       	push   0x10401b04 ; 0x10401b04 '__PhoneScoreInfo end.'
+10182ca6:	68 bc 53 3a 10       	push   0x103a53bc
+10182cab:	68 54 11 40 10       	push   0x10401154 ; 0x10401154 'PA_SCORE_INTEG'
+10182cb0:	8d 85 9c fe ff ff    	lea    eax,[ebp-0x164]
+10182cb6:	c7 45 fc 03 00 00 00 	mov    DWORD PTR [ebp-0x4],0x3
+10182cbd:	68 c8 53 3a 10       	push   0x103a53c8
+10182cc2:	50                   	push   eax
+10182cc3:	e8 28 75 ea ff       	call   0x1002a1f0
+10182cc8:	83 c4 08             	add    esp,0x8
+10182ccb:	50                   	push   eax
+10182ccc:	e8 1f 75 ea ff       	call   0x1002a1f0
+10182cd1:	83 c4 08             	add    esp,0x8
+10182cd4:	50                   	push   eax
+10182cd5:	e8 16 75 ea ff       	call   0x1002a1f0
+10182cda:	83 c4 08             	add    esp,0x8
+10182cdd:	50                   	push   eax
+10182cde:	e8 0d 75 ea ff       	call   0x1002a1f0
+10182ce3:	83 c4 08             	add    esp,0x8
+10182ce6:	c7 45 fc ff ff ff ff 	mov    DWORD PTR [ebp-0x4],0xffffffff
+10182ced:	8d 8d 8c fe ff ff    	lea    ecx,[ebp-0x174]
+10182cf3:	e8 48 76 ec ff       	call   0x1004a340
+10182cf8:	33 c0                	xor    eax,eax
+10182cfa:	8b 4d f4             	mov    ecx,DWORD PTR [ebp-0xc]
+10182cfd:	64 89 0d 00 00 00 00 	mov    DWORD PTR fs:0x0,ecx
+10182d04:	59                   	pop    ecx
+10182d05:	5f                   	pop    edi
+10182d06:	5e                   	pop    esi
+10182d07:	5b                   	pop    ebx
+10182d08:	8b 4d f0             	mov    ecx,DWORD PTR [ebp-0x10]
+10182d0b:	33 cd                	xor    ecx,ebp
+10182d0d:	e8 1b 55 19 00       	call   0x1031822d
+10182d12:	8b e5                	mov    esp,ebp
+10182d14:	5d                   	pop    ebp
+10182d15:	c3                   	ret
+10182d16:	cc                   	int3
+10182d17:	cc                   	int3
+10182d18:	cc                   	int3
+10182d19:	cc                   	int3
+10182d1a:	cc                   	int3
+10182d1b:	cc                   	int3
+10182d1c:	cc                   	int3
+10182d1d:	cc                   	int3
+10182d1e:	cc                   	int3
+10182d1f:	cc                   	int3
+10182d20:	55                   	push   ebp
+10182d21:	8b ec                	mov    ebp,esp
+10182d23:	6a ff                	push   0xffffffff
+10182d25:	68 e6 12 36 10       	push   0x103612e6
+10182d2a:	64 a1 00 00 00 00    	mov    eax,fs:0x0
+10182d30:	50                   	push   eax
+10182d31:	81 ec 54 01 00 00    	sub    esp,0x154
+10182d37:	53                   	push   ebx
+10182d38:	56                   	push   esi
+10182d39:	57                   	push   edi
+10182d3a:	a1 6c 30 46 10       	mov    eax,ds:0x1046306c ; 0x1046306c f32=-0.002943414729088545
+10182d3f:	33 c5                	xor    eax,ebp
+10182d41:	50                   	push   eax
+10182d42:	8d 45 f4             	lea    eax,[ebp-0xc]
+10182d45:	64 a3 00 00 00 00    	mov    fs:0x0,eax
+10182d4b:	8b f1                	mov    esi,ecx
+10182d4d:	6a 01                	push   0x1
+10182d4f:	6a 02                	push   0x2
+10182d51:	8d 8d 58 ff ff ff    	lea    ecx,[ebp-0xa8]
+10182d57:	e8 54 79 ec ff       	call   0x1004a6b0
+10182d5c:	6a 2f                	push   0x2f
+10182d5e:	68 10 11 40 10       	push   0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+10182d63:	c7 85 48 ff ff ff 00 	mov    DWORD PTR [ebp-0xb8],0x0
+10182d6a:	00 00 00 
+10182d6d:	c7 85 4c ff ff ff b8 	mov    DWORD PTR [ebp-0xb4],0x10401bb8 ; 0x10401bb8 'polly::PaScoreIntegration::__PhoneHundredScore'
+10182d74:	1b 40 10 
+10182d77:	e8 14 7c 1b 00       	call   0x1033a990
+10182d7c:	83 c4 08             	add    esp,0x8
+10182d7f:	85 c0                	test   eax,eax
+10182d81:	75 07                	jne    0x10182d8a
+10182d83:	b8 10 11 40 10       	mov    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+10182d88:	eb 15                	jmp    0x10182d9f
+10182d8a:	3d 10 11 40 10       	cmp    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+10182d8f:	76 0e                	jbe    0x10182d9f
+10182d91:	80 78 ff 2f          	cmp    BYTE PTR [eax-0x1],0x2f
+10182d95:	74 08                	je     0x10182d9f
+10182d97:	48                   	dec    eax
+10182d98:	3d 10 11 40 10       	cmp    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+10182d9d:	77 f2                	ja     0x10182d91
+10182d9f:	89 85 50 ff ff ff    	mov    DWORD PTR [ebp-0xb0],eax
+10182da5:	c7 85 54 ff ff ff f7 	mov    DWORD PTR [ebp-0xac],0x3f7
+10182dac:	03 00 00 
+10182daf:	68 e8 1b 40 10       	push   0x10401be8 ; 0x10401be8 '__PhoneHundredScore begin.'
+10182db4:	68 bc 53 3a 10       	push   0x103a53bc
+10182db9:	68 54 11 40 10       	push   0x10401154 ; 0x10401154 'PA_SCORE_INTEG'
+10182dbe:	8d 85 58 ff ff ff    	lea    eax,[ebp-0xa8]
+10182dc4:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [ebp-0x4],0x0
+10182dcb:	68 c8 53 3a 10       	push   0x103a53c8
+10182dd0:	50                   	push   eax
+10182dd1:	e8 1a 74 ea ff       	call   0x1002a1f0
+10182dd6:	83 c4 08             	add    esp,0x8
+10182dd9:	50                   	push   eax
+10182dda:	e8 11 74 ea ff       	call   0x1002a1f0
+10182ddf:	83 c4 08             	add    esp,0x8
+10182de2:	50                   	push   eax
+10182de3:	e8 08 74 ea ff       	call   0x1002a1f0
+10182de8:	83 c4 08             	add    esp,0x8
+10182deb:	50                   	push   eax
+10182dec:	e8 ff 73 ea ff       	call   0x1002a1f0
+10182df1:	83 c4 08             	add    esp,0x8
+10182df4:	c7 45 fc ff ff ff ff 	mov    DWORD PTR [ebp-0x4],0xffffffff
+10182dfb:	8d 8d 48 ff ff ff    	lea    ecx,[ebp-0xb8]
+10182e01:	e8 3a 75 ec ff       	call   0x1004a340
+10182e06:	8b 8e 20 03 00 00    	mov    ecx,DWORD PTR [esi+0x320]
+10182e0c:	b8 ab aa aa 2a       	mov    eax,0x2aaaaaab
+10182e11:	2b 8e 1c 03 00 00    	sub    ecx,DWORD PTR [esi+0x31c]
+10182e17:	33 db                	xor    ebx,ebx
+10182e19:	f7 e9                	imul   ecx
+10182e1b:	d1 fa                	sar    edx,1
+10182e1d:	8b c2                	mov    eax,edx
+10182e1f:	c1 e8 1f             	shr    eax,0x1f
+10182e22:	03 c2                	add    eax,edx
+10182e24:	0f 84 47 02 00 00    	je     0x10183071
+10182e2a:	66 0f 1f 44 00 00    	nop    WORD PTR [eax+eax*1+0x0]
+10182e30:	8b 86 68 04 00 00    	mov    eax,DWORD PTR [esi+0x468]
+10182e36:	0f 57 c0             	xorps  xmm0,xmm0
+10182e39:	f3 0f 10 0c 98       	movss  xmm1,DWORD PTR [eax+ebx*4]
+10182e3e:	8b 86 b0 08 00 00    	mov    eax,DWORD PTR [esi+0x8b0]
+10182e44:	83 f8 0c             	cmp    eax,0xc
+10182e47:	0f 84 21 01 00 00    	je     0x10182f6e
+10182e4d:	83 f8 0b             	cmp    eax,0xb
+10182e50:	0f 84 18 01 00 00    	je     0x10182f6e
+10182e56:	83 f8 0a             	cmp    eax,0xa
+10182e59:	0f 84 0f 01 00 00    	je     0x10182f6e
+10182e5f:	8b 8e 74 08 00 00    	mov    ecx,DWORD PTR [esi+0x874]
+10182e65:	83 f9 01             	cmp    ecx,0x1
+10182e68:	0f 84 b4 00 00 00    	je     0x10182f22
+10182e6e:	83 f9 02             	cmp    ecx,0x2
+10182e71:	0f 84 ab 00 00 00    	je     0x10182f22
+10182e77:	83 f9 03             	cmp    ecx,0x3
+10182e7a:	75 4c                	jne    0x10182ec8
+10182e7c:	0f 28 c1             	movaps xmm0,xmm1
+10182e7f:	83 f8 02             	cmp    eax,0x2
+10182e82:	75 15                	jne    0x10182e99
+10182e84:	f3 0f 5c 86 1c 06 00 	subss  xmm0,DWORD PTR [esi+0x61c]
+10182e8b:	00 
+10182e8c:	f3 0f 5e 86 20 06 00 	divss  xmm0,DWORD PTR [esi+0x620]
+10182e93:	00 
+10182e94:	e9 5b 01 00 00       	jmp    0x10182ff4
+10182e99:	83 f8 05             	cmp    eax,0x5
+10182e9c:	75 15                	jne    0x10182eb3
+10182e9e:	f3 0f 5c 86 34 06 00 	subss  xmm0,DWORD PTR [esi+0x634]
+10182ea5:	00 
+10182ea6:	f3 0f 5e 86 38 06 00 	divss  xmm0,DWORD PTR [esi+0x638]
+10182ead:	00 
+10182eae:	e9 41 01 00 00       	jmp    0x10182ff4
+10182eb3:	f3 0f 5c 86 04 06 00 	subss  xmm0,DWORD PTR [esi+0x604]
+10182eba:	00 
+10182ebb:	f3 0f 5e 86 08 06 00 	divss  xmm0,DWORD PTR [esi+0x608]
+10182ec2:	00 
+10182ec3:	e9 2c 01 00 00       	jmp    0x10182ff4
+10182ec8:	83 f9 04             	cmp    ecx,0x4
+10182ecb:	74 09                	je     0x10182ed6
+10182ecd:	83 f9 05             	cmp    ecx,0x5
+10182ed0:	0f 85 1e 01 00 00    	jne    0x10182ff4
+10182ed6:	0f 28 c1             	movaps xmm0,xmm1
+10182ed9:	83 f8 02             	cmp    eax,0x2
+10182edc:	75 15                	jne    0x10182ef3
+10182ede:	f3 0f 5c 86 24 06 00 	subss  xmm0,DWORD PTR [esi+0x624]
+10182ee5:	00 
+10182ee6:	f3 0f 5e 86 28 06 00 	divss  xmm0,DWORD PTR [esi+0x628]
+10182eed:	00 
+10182eee:	e9 01 01 00 00       	jmp    0x10182ff4
+10182ef3:	83 f8 05             	cmp    eax,0x5
+10182ef6:	75 15                	jne    0x10182f0d
+10182ef8:	f3 0f 5c 86 3c 06 00 	subss  xmm0,DWORD PTR [esi+0x63c]
+10182eff:	00 
+10182f00:	f3 0f 5e 86 40 06 00 	divss  xmm0,DWORD PTR [esi+0x640]
+10182f07:	00 
+10182f08:	e9 e7 00 00 00       	jmp    0x10182ff4
+10182f0d:	f3 0f 5c 86 0c 06 00 	subss  xmm0,DWORD PTR [esi+0x60c]
+10182f14:	00 
+10182f15:	f3 0f 5e 86 10 06 00 	divss  xmm0,DWORD PTR [esi+0x610]
+10182f1c:	00 
+10182f1d:	e9 d2 00 00 00       	jmp    0x10182ff4
+10182f22:	0f 28 c1             	movaps xmm0,xmm1
+10182f25:	83 f8 02             	cmp    eax,0x2
+10182f28:	75 15                	jne    0x10182f3f
+10182f2a:	f3 0f 5c 86 14 06 00 	subss  xmm0,DWORD PTR [esi+0x614]
+10182f31:	00 
+10182f32:	f3 0f 5e 86 18 06 00 	divss  xmm0,DWORD PTR [esi+0x618]
+10182f39:	00 
+10182f3a:	e9 b5 00 00 00       	jmp    0x10182ff4
+10182f3f:	83 f8 05             	cmp    eax,0x5
+10182f42:	75 15                	jne    0x10182f59
+10182f44:	f3 0f 5c 86 2c 06 00 	subss  xmm0,DWORD PTR [esi+0x62c]
+10182f4b:	00 
+10182f4c:	f3 0f 5e 86 30 06 00 	divss  xmm0,DWORD PTR [esi+0x630]
+10182f53:	00 
+10182f54:	e9 9b 00 00 00       	jmp    0x10182ff4
+10182f59:	f3 0f 5c 86 fc 05 00 	subss  xmm0,DWORD PTR [esi+0x5fc]
+10182f60:	00 
+10182f61:	f3 0f 5e 86 00 06 00 	divss  xmm0,DWORD PTR [esi+0x600]
+10182f68:	00 
+10182f69:	e9 86 00 00 00       	jmp    0x10182ff4
+10182f6e:	8b 86 74 08 00 00    	mov    eax,DWORD PTR [esi+0x874]
+10182f74:	83 f8 01             	cmp    eax,0x1
+10182f77:	75 15                	jne    0x10182f8e
+10182f79:	0f 28 c1             	movaps xmm0,xmm1
+10182f7c:	f3 0f 5c 86 ec 05 00 	subss  xmm0,DWORD PTR [esi+0x5ec]
+10182f83:	00 
+10182f84:	f3 0f 5e 86 f0 05 00 	divss  xmm0,DWORD PTR [esi+0x5f0]
+10182f8b:	00 
+10182f8c:	eb 66                	jmp    0x10182ff4
+10182f8e:	83 f8 02             	cmp    eax,0x2
+10182f91:	75 15                	jne    0x10182fa8
+10182f93:	0f 28 c1             	movaps xmm0,xmm1
+10182f96:	f3 0f 5c 86 d4 05 00 	subss  xmm0,DWORD PTR [esi+0x5d4]
+10182f9d:	00 
+10182f9e:	f3 0f 5e 86 d8 05 00 	divss  xmm0,DWORD PTR [esi+0x5d8]
+10182fa5:	00 
+10182fa6:	eb 4c                	jmp    0x10182ff4
+10182fa8:	83 f8 03             	cmp    eax,0x3
+10182fab:	75 15                	jne    0x10182fc2
+10182fad:	0f 28 c1             	movaps xmm0,xmm1
+10182fb0:	f3 0f 5c 86 dc 05 00 	subss  xmm0,DWORD PTR [esi+0x5dc]
+10182fb7:	00 
+10182fb8:	f3 0f 5e 86 e0 05 00 	divss  xmm0,DWORD PTR [esi+0x5e0]
+10182fbf:	00 
+10182fc0:	eb 32                	jmp    0x10182ff4
+10182fc2:	83 f8 04             	cmp    eax,0x4
+10182fc5:	75 15                	jne    0x10182fdc
+10182fc7:	0f 28 c1             	movaps xmm0,xmm1
+10182fca:	f3 0f 5c 86 e4 05 00 	subss  xmm0,DWORD PTR [esi+0x5e4]
+10182fd1:	00 
+10182fd2:	f3 0f 5e 86 e8 05 00 	divss  xmm0,DWORD PTR [esi+0x5e8]
+10182fd9:	00 
+10182fda:	eb 18                	jmp    0x10182ff4
+10182fdc:	83 f8 05             	cmp    eax,0x5
+10182fdf:	75 13                	jne    0x10182ff4
+10182fe1:	0f 28 c1             	movaps xmm0,xmm1
+10182fe4:	f3 0f 5c 86 f4 05 00 	subss  xmm0,DWORD PTR [esi+0x5f4]
+10182feb:	00 
+10182fec:	f3 0f 5e 86 f8 05 00 	divss  xmm0,DWORD PTR [esi+0x5f8]
+10182ff3:	00 
+10182ff4:	0f 57 c9             	xorps  xmm1,xmm1
+10182ff7:	8b 86 78 04 00 00    	mov    eax,DWORD PTR [esi+0x478]
+10182ffd:	f3 0f 5d c8          	minss  xmm1,xmm0
+10183001:	f3 0f 10 05 ac aa 41 	movss  xmm0,DWORD PTR ds:0x1041aaac ; 0x1041aaac f32=100.0
+10183008:	10 
+10183009:	f3 0f 59 c9          	mulss  xmm1,xmm1
+1018300d:	f3 0f 59 0d 2c aa 41 	mulss  xmm1,DWORD PTR ds:0x1041aa2c ; 0x1041aa2c f32=10.0
+10183014:	10 
+10183015:	f3 0f 5c c1          	subss  xmm0,xmm1
+10183019:	0f 57 c9             	xorps  xmm1,xmm1
+1018301c:	f3 0f 5f c8          	maxss  xmm1,xmm0
+10183020:	f3 0f 11 4d f0       	movss  DWORD PTR [ebp-0x10],xmm1
+10183025:	39 86 7c 04 00 00    	cmp    DWORD PTR [esi+0x47c],eax
+1018302b:	74 0f                	je     0x1018303c
+1018302d:	f3 0f 11 08          	movss  DWORD PTR [eax],xmm1
+10183031:	83 c0 04             	add    eax,0x4
+10183034:	89 86 78 04 00 00    	mov    DWORD PTR [esi+0x478],eax
+1018303a:	eb 10                	jmp    0x1018304c
+1018303c:	8d 4d f0             	lea    ecx,[ebp-0x10]
+1018303f:	51                   	push   ecx
+10183040:	50                   	push   eax
+10183041:	8d 8e 74 04 00 00    	lea    ecx,[esi+0x474]
+10183047:	e8 64 e6 ec ff       	call   0x100516b0
+1018304c:	8b 8e 20 03 00 00    	mov    ecx,DWORD PTR [esi+0x320]
+10183052:	b8 ab aa aa 2a       	mov    eax,0x2aaaaaab
+10183057:	2b 8e 1c 03 00 00    	sub    ecx,DWORD PTR [esi+0x31c]
+1018305d:	43                   	inc    ebx
+1018305e:	f7 e9                	imul   ecx
+10183060:	d1 fa                	sar    edx,1
+10183062:	8b c2                	mov    eax,edx
+10183064:	c1 e8 1f             	shr    eax,0x1f
+10183067:	03 c2                	add    eax,edx
+10183069:	3b d8                	cmp    ebx,eax
+1018306b:	0f 82 bf fd ff ff    	jb     0x10182e30
+10183071:	6a 01                	push   0x1
+10183073:	6a 02                	push   0x2
+10183075:	8d 8d b0 fe ff ff    	lea    ecx,[ebp-0x150]
+1018307b:	e8 30 76 ec ff       	call   0x1004a6b0
+10183080:	6a 2f                	push   0x2f
+10183082:	68 10 11 40 10       	push   0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+10183087:	c7 85 a0 fe ff ff 00 	mov    DWORD PTR [ebp-0x160],0x0
+1018308e:	00 00 00 
+10183091:	c7 85 a4 fe ff ff b8 	mov    DWORD PTR [ebp-0x15c],0x10401bb8 ; 0x10401bb8 'polly::PaScoreIntegration::__PhoneHundredScore'
+10183098:	1b 40 10 
+1018309b:	e8 f0 78 1b 00       	call   0x1033a990
+101830a0:	83 c4 08             	add    esp,0x8
+101830a3:	85 c0                	test   eax,eax
+101830a5:	75 07                	jne    0x101830ae
+101830a7:	b8 10 11 40 10       	mov    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+101830ac:	eb 15                	jmp    0x101830c3
+101830ae:	3d 10 11 40 10       	cmp    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+101830b3:	76 0e                	jbe    0x101830c3
+101830b5:	80 78 ff 2f          	cmp    BYTE PTR [eax-0x1],0x2f
+101830b9:	74 08                	je     0x101830c3
+101830bb:	48                   	dec    eax
+101830bc:	3d 10 11 40 10       	cmp    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+101830c1:	77 f2                	ja     0x101830b5
+101830c3:	89 85 a8 fe ff ff    	mov    DWORD PTR [ebp-0x158],eax
+101830c9:	c7 85 ac fe ff ff 2f 	mov    DWORD PTR [ebp-0x154],0x42f
+101830d0:	04 00 00 
+101830d3:	68 9c 1b 40 10       	push   0x10401b9c ; 0x10401b9c '__PhoneHundredScore end.'
+101830d8:	68 bc 53 3a 10       	push   0x103a53bc
+101830dd:	68 54 11 40 10       	push   0x10401154 ; 0x10401154 'PA_SCORE_INTEG'
+101830e2:	8d 85 b0 fe ff ff    	lea    eax,[ebp-0x150]
+101830e8:	c7 45 fc 01 00 00 00 	mov    DWORD PTR [ebp-0x4],0x1
+101830ef:	68 c8 53 3a 10       	push   0x103a53c8
+101830f4:	50                   	push   eax
+101830f5:	e8 f6 70 ea ff       	call   0x1002a1f0
+101830fa:	83 c4 08             	add    esp,0x8
+101830fd:	50                   	push   eax
+101830fe:	e8 ed 70 ea ff       	call   0x1002a1f0
+10183103:	83 c4 08             	add    esp,0x8
+10183106:	50                   	push   eax
+10183107:	e8 e4 70 ea ff       	call   0x1002a1f0
+1018310c:	83 c4 08             	add    esp,0x8
+1018310f:	50                   	push   eax
+10183110:	e8 db 70 ea ff       	call   0x1002a1f0
+10183115:	83 c4 08             	add    esp,0x8
+10183118:	c7 45 fc ff ff ff ff 	mov    DWORD PTR [ebp-0x4],0xffffffff
+1018311f:	8d 8d a0 fe ff ff    	lea    ecx,[ebp-0x160]
+10183125:	e8 16 72 ec ff       	call   0x1004a340
+1018312a:	33 c0                	xor    eax,eax
+1018312c:	8b 4d f4             	mov    ecx,DWORD PTR [ebp-0xc]
+1018312f:	64 89 0d 00 00 00 00 	mov    DWORD PTR fs:0x0,ecx
+10183136:	59                   	pop    ecx
+10183137:	5f                   	pop    edi
+10183138:	5e                   	pop    esi
+10183139:	5b                   	pop    ebx
+1018313a:	8b e5                	mov    esp,ebp
+1018313c:	5d                   	pop    ebp
+1018313d:	c3                   	ret
+1018313e:	cc                   	int3
+1018313f:	cc                   	int3
+10183140:	55                   	push   ebp
+10183141:	8b ec                	mov    ebp,esp
+10183143:	6a ff                	push   0xffffffff
+10183145:	68 80 4a 37 10       	push   0x10374a80
+1018314a:	64 a1 00 00 00 00    	mov    eax,fs:0x0
+10183150:	50                   	push   eax
+10183151:	81 ec 68 02 00 00    	sub    esp,0x268
+10183157:	a1 6c 30 46 10       	mov    eax,ds:0x1046306c ; 0x1046306c f32=-0.002943414729088545
+1018315c:	33 c5                	xor    eax,ebp
+1018315e:	89 45 f0             	mov    DWORD PTR [ebp-0x10],eax
+10183161:	53                   	push   ebx
+10183162:	56                   	push   esi
+10183163:	57                   	push   edi
+10183164:	50                   	push   eax
+10183165:	8d 45 f4             	lea    eax,[ebp-0xc]
+10183168:	64 a3 00 00 00 00    	mov    fs:0x0,eax
+1018316e:	8b d9                	mov    ebx,ecx
+10183170:	89 9d 60 ff ff ff    	mov    DWORD PTR [ebp-0xa0],ebx
+10183176:	6a 01                	push   0x1
+10183178:	6a 02                	push   0x2
+1018317a:	8d 8d 8c fe ff ff    	lea    ecx,[ebp-0x174]
+10183180:	e8 2b 75 ec ff       	call   0x1004a6b0
+10183185:	6a 2f                	push   0x2f
+10183187:	68 10 11 40 10       	push   0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+1018318c:	c7 85 7c fe ff ff 00 	mov    DWORD PTR [ebp-0x184],0x0
+10183193:	00 00 00 
+10183196:	c7 85 80 fe ff ff f4 	mov    DWORD PTR [ebp-0x180],0x104017f4 ; 0x104017f4 'polly::PaScoreIntegration::__PhoneIpaInfo'
+1018319d:	17 40 10 
+101831a0:	e8 eb 77 1b 00       	call   0x1033a990
+101831a5:	83 c4 08             	add    esp,0x8
+101831a8:	85 c0                	test   eax,eax
+101831aa:	75 07                	jne    0x101831b3
+101831ac:	b8 10 11 40 10       	mov    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+101831b1:	eb 1b                	jmp    0x101831ce
+101831b3:	3d 10 11 40 10       	cmp    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+101831b8:	76 14                	jbe    0x101831ce
+101831ba:	66 0f 1f 44 00 00    	nop    WORD PTR [eax+eax*1+0x0]
+101831c0:	80 78 ff 2f          	cmp    BYTE PTR [eax-0x1],0x2f
+101831c4:	74 08                	je     0x101831ce
+101831c6:	48                   	dec    eax
+101831c7:	3d 10 11 40 10       	cmp    eax,0x10401110 ; 0x10401110 '[构建目录]\\polly\\tags\\v4.4.2\\src\\scorer\\pa-score-integration.cc'
+101831cc:	77 f2                	ja     0x101831c0
+101831ce:	89 85 84 fe ff ff    	mov    DWORD PTR [ebp-0x17c],eax
+101831d4:	c7 85 88 fe ff ff 35 	mov    DWORD PTR [ebp-0x178],0x435
+101831db:	04 00 00 
+101831de:	68 84 1b 40 10       	push   0x10401b84 ; 0x10401b84 '__PhoneIpaInfo begin.'
+101831e3:	68 bc 53 3a 10       	push   0x103a53bc
+101831e8:	68 54 11 40 10       	push   0x10401154 ; 0x10401154 'PA_SCORE_INTEG'
+101831ed:	8d 85 8c fe ff ff    	lea    eax,[ebp-0x174]
+101831f3:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [ebp-0x4],0x0
+101831fa:	68 c8 53 3a 10       	push   0x103a53c8
+101831ff:	50                   	push   eax
+10183200:	e8 eb 6f ea ff       	call   0x1002a1f0
+10183205:	83 c4 08             	add    esp,0x8
+10183208:	50                   	push   eax
+10183209:	e8 e2 6f ea ff       	call   0x1002a1f0
+1018320e:	83 c4 08             	add    esp,0x8
+10183211:	50                   	push   eax
+10183212:	e8 d9 6f ea ff       	call   0x1002a1f0
+10183217:	83 c4 08             	add    esp,0x8
+1018321a:	50                   	push   eax
+1018321b:	e8 d0 6f ea ff       	call   0x1002a1f0
+10183220:	83 c4 08             	add    esp,0x8
+10183223:	c7 45 fc ff ff ff ff 	mov    DWORD PTR [ebp-0x4],0xffffffff
+1018322a:	8d 8d 7c fe ff ff    	lea    ecx,[ebp-0x184]
+10183230:	e8 0b 71 ec ff       	call   0x1004a340
+10183235:	8b 8b d0 03 00 00    	mov    ecx,DWORD PTR [ebx+0x3d0]
+1018323b:	8d b3 8c 04 00 00    	lea    esi,[ebx+0x48c]
+10183241:	2b 8b cc 03 00 00    	sub    ecx,DWORD PTR [ebx+0x3cc]
+10183247:	b8 ab aa aa 2a       	mov    eax,0x2aaaaaab
+1018324c:	f7 e9                	imul   ecx
+1018324e:	56                   	push   esi
+1018324f:	d1 fa                	sar    edx,1
+10183251:	8b ce                	mov    ecx,esi
+10183253:	8b fa                	mov    edi,edx
+10183255:	89 b5 5c ff ff ff    	mov    DWORD PTR [ebp-0xa4],esi
+1018325b:	c1 ef 1f             	shr    edi,0x1f
+1018325e:	03 fa                	add    edi,edx
+10183260:	57                   	push   edi
+10183261:	89 bd 38 ff ff ff    	mov    DWORD PTR [ebp-0xc8],edi
+10183267:	e8 d4 7a ea ff       	call   0x1002ad40
+1018326c:	8d 83 98 04 00 00    	lea    eax,[ebx+0x498]
+10183272:	50                   	push   eax
+10183273:	57                   	push   edi
+10183274:	8b c8                	mov    ecx,eax
+10183276:	89 85 30 ff ff ff    	mov    DWORD PTR [ebp-0xd0],eax
+1018327c:	e8 af fc 00 00       	call   0x10192f30
+10183281:	8d 83 a4 04 00 00    	lea    eax,[ebx+0x4a4]
+10183287:	50                   	push   eax
+10183288:	57                   	push   edi
+10183289:	8b c8                	mov    ecx,eax
+1018328b:	89 85 24 ff ff ff    	mov    DWORD PTR [ebp-0xdc],eax
+10183291:	e8 9a fc 00 00       	call   0x10192f30
+10183296:	8d 83 b0 04 00 00    	lea    eax,[ebx+0x4b0]
+1018329c:	50                   	push   eax
+1018329d:	57                   	push   edi
+1018329e:	8b c8                	mov    ecx,eax
+101832a0:	89 85 2c ff ff ff    	mov    DWORD PTR [ebp-0xd4],eax
+101832a6:	e8 85 fc 00 00       	call   0x10192f30
+101832ab:	8d 83 bc 04 00 00    	lea    eax,[ebx+0x4bc]
+101832b1:	50                   	push   eax
+101832b2:	57                   	push   edi
+101832b3:	8b c8                	mov    ecx,eax
+101832b5:	89 85 28 ff ff ff    	mov    DWORD PTR [ebp-0xd8],eax
+101832bb:	e8 70 fc 00 00       	call   0x10192f30
+101832c0:	8d 83 c8 04 00 00    	lea    eax,[ebx+0x4c8]
+101832c6:	50                   	push   eax
+101832c7:	57                   	push   edi
+101832c8:	8b c8                	mov    ecx,eax
+101832ca:	89 85 3c ff ff ff    	mov    DWORD PTR [ebp-0xc4],eax
+101832d0:	e8 cb fd 00 00       	call   0x101930a0
+101832d5:	6a 01                	push   0x1
+101832d7:	0f 57 c0             	xorps  xmm0,xmm0
+101832da:	c7 45 e0 00 00 00 00 	mov    DWORD PTR [ebp-0x20],0x0
+101832e1:	68 f4 73 3f 10       	push   0x103f73f4
+101832e6:	8d 8d 34 fe ff ff    	lea    ecx,[ebp-0x1cc]
+101832ec:	66 0f d6 45 d8       	movq   QWORD PTR [ebp-0x28],xmm0
+101832f1:	c7 85 44 fe ff ff 00 	mov    DWORD PTR [ebp-0x1bc],0x0
+101832f8:	00 00 00 
+101832fb:	c7 85 48 fe ff ff 0f 	mov    DWORD PTR [ebp-0x1b8],0xf
+10183302:	00 00 00 
+10183305:	c6 85 34 fe ff ff 00 	mov    BYTE PTR [ebp-0x1cc],0x0
+1018330c:	e8 6f 89 e9 ff       	call   0x1001bc80
+10183311:	c7 45 fc 01 00 00 00 	mov    DWORD PTR [ebp-0x4],0x1
+10183318:	6a 01                	push   0x1
+1018331a:	68 6c e8 3e 10       	push   0x103ee86c
+1018331f:	8d 8d 4c fe ff ff    	lea    ecx,[ebp-0x1b4]
+10183325:	c7 85 5c fe ff ff 00 	mov    DWORD PTR [ebp-0x1a4],0x0
+1018332c:	00 00 00 
+1018332f:	c7 85 60 fe ff ff 0f 	mov    DWORD PTR [ebp-0x1a0],0xf
+10183336:	00 00 00 
+10183339:	c6 85 4c fe ff ff 00 	mov    BYTE PTR [ebp-0x1b4],0x0
+10183340:	e8 3b 89 e9 ff       	call   0x1001bc80
+10183345:	c6 45 fc 02          	mov    BYTE PTR [ebp-0x4],0x2
+10183349:	8d 8d 64 fe ff ff    	lea    ecx,[ebp-0x19c]
+1018334f:	6a 01                	push   0x1
+10183351:	68 f8 73 3f 10       	push   0x103f73f8
+10183356:	c7 85 74 fe ff ff 00 	mov    DWORD PTR [ebp-0x18c],0x0
+1018335d:	00 00 00 

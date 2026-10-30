@@ -1,0 +1,10 @@
+# 上游解码路径与逐帧数值的证据
+
+仅静态分析已安装 lsx-ases.dll，无运行、录音和上传。地址为 VA，image base 0x10000000。
+
+1. `polly::Decoder::DecodePostProcessingA` (decoder-post-a.asm.txt) VA 0x1009c7ea 调用0x1009e570构造FST，VA 0x1009c7f6..0x1009c801调用解码器虚表获取路径，0x1009c80c..0x1009c823将Decoder+0xa4作为参数传入0x1009f9c0。
+2. 0x1009e570于0x1009e58f给FST设置虚表0x103f1a28；解析该虚表前置RTTI CompleteObjectLocator 0x1041f298，type descriptor 0x10466950，直接得到本地类型 `VectorFst<ArcTpl<LatticeWeightTpl<float>>>`。不是根据字段布局单独猜类型。见fst-result-create.asm.txt。
+3. `decoder-result-parse.asm.txt` VA 0x1009fa86..0x1009fb17迭代路径；VA 0x1009fb3a..0x1009fb57读取当前路径弧+8和+12两个浮点权重。VA 0x1009fb5c检查弧首个标签非零后，0x1009fb7c..0x1009fb9b将两个浮点数原样追加到 Decoder+0xa4 向量。官方 Kaldi LatticeWeight 约定两个量为图代价和声学代价，但仅该类型名本身不足以排除这份软件在此前修改或重新缩放权重。
+4. Decoder析构函数 VA 0x1009a8d8 把 Decoder+0x4c 作为子对象传到析构器 0x10046420，后者于0x1004645c析构其+0x58向量，因此Decoder+0xa4为该子对象+0x58。StateFinishDecode::Process VA 0x10044e6f..0x10044ebb 通过 StateMachine+0x50 获取 recognizer 并调用 Recognizer::CompleteDecode；后者 VA 0x100e8ba5..0x100e8bbf 取 recognizer+0x14 作为 Decoder::CompleteDecode 的 this。此前跟踪的同一个 StateMachine+0x50、recognizer+0x14 在 VA 0x10045004..0x1004501a 再次取出，加0x4c后调用拷贝构造器0x1009cd40；该构造器 VA 0x1009cdc3..0x1009cdce 复制对象+0x58的pair向量。对象身份有明确调用和实例指针链。Decoder::CompleteDecode VA 0x1009be7e..0x1009be8e 对 Decoder+0xc==0 调用 DecodePostProcessingA；所调查的 FA 样本历史日志 ases-20261029.log 行373518、373530、373626、373630 显示 DecoderType=FA、CompleteDecode和DecodePostProcessingA实际执行，故本样本对应A分支。证据见 decoderdata-copy-chain.asm.txt、recognizer-setrecognition.asm.txt（文件名历史误命名，实际为CompleteDecode）、decoder-complete-entry.asm.txt、decoder-complete-branch.asm.txt。
+5. `ProcessedDecoderData` VA 0x102ddde1..0x102dde2f 依次读取传入DecoderData+0x58向量每一项的第二个float，取负并除以当前模型的 acoustic-scale，存入处理后对象的首个float数组。配置对象的注册、查询与实例身份经独立审计已闭合，详见frame-gop-data-bridge.md。本机online.conf配置值为1.0；本次运行时值未经内存观测。
+6. 本地 PhoneScoreInfo VA 0x10182a28..0x10182a65 读取frame_gop数组、音素帧数并求均值。独立审计已将第5条的处理后数组与该frame_gop的搬运连接起来，详见frame-gop-data-bridge.md；第4条补齐了解码器路径权重进入第5条DecoderData对象的实例身份。从模型计算声学权重的精确运算、是否有后验比较/归一化仍未完整证明。不能只依据Kaldi通用源代码声称本项目特定实现在这些步骤没有其它运算。

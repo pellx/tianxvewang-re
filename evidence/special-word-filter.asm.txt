@@ -1,0 +1,86 @@
+
+resources/plugins/ases/ia32/win32/lsx-ases.dll:     file format pei-i386
+
+
+Disassembly of section .text:
+
+101bc1c0 <.text+0x1bb1c0>:
+101bc1c0:	55                   	push   ebp
+101bc1c1:	8b ec                	mov    ebp,esp
+101bc1c3:	83 ec 0c             	sub    esp,0xc
+101bc1c6:	a1 6c 30 46 10       	mov    eax,ds:0x1046306c
+101bc1cb:	33 c5                	xor    eax,ebp
+101bc1cd:	89 45 fc             	mov    DWORD PTR [ebp-0x4],eax
+101bc1d0:	83 7d 1c 10          	cmp    DWORD PTR [ebp+0x1c],0x10
+101bc1d4:	8d 45 08             	lea    eax,[ebp+0x8]
+101bc1d7:	8b 55 08             	mov    edx,DWORD PTR [ebp+0x8]
+101bc1da:	0f 43 c2             	cmovae eax,edx
+101bc1dd:	89 4d f4             	mov    DWORD PTR [ebp-0xc],ecx
+101bc1e0:	89 45 f8             	mov    DWORD PTR [ebp-0x8],eax
+101bc1e3:	8d 45 08             	lea    eax,[ebp+0x8]
+101bc1e6:	0f 43 c2             	cmovae eax,edx
+101bc1e9:	03 45 18             	add    eax,DWORD PTR [ebp+0x18]
+101bc1ec:	83 7d 1c 10          	cmp    DWORD PTR [ebp+0x1c],0x10
+101bc1f0:	53                   	push   ebx
+101bc1f1:	56                   	push   esi
+101bc1f2:	57                   	push   edi
+101bc1f3:	8d 5d 08             	lea    ebx,[ebp+0x8]
+101bc1f6:	8b f8                	mov    edi,eax
+101bc1f8:	0f 43 da             	cmovae ebx,edx
+101bc1fb:	33 c9                	xor    ecx,ecx
+101bc1fd:	2b fb                	sub    edi,ebx
+101bc1ff:	33 f6                	xor    esi,esi
+101bc201:	3b d8                	cmp    ebx,eax
+101bc203:	0f 47 f9             	cmova  edi,ecx
+101bc206:	85 ff                	test   edi,edi
+101bc208:	74 1e                	je     0x101bc228
+101bc20a:	66 0f 1f 44 00 00    	nop    WORD PTR [eax+eax*1+0x0]
+101bc210:	0f be 04 1e          	movsx  eax,BYTE PTR [esi+ebx*1]
+101bc214:	50                   	push   eax
+101bc215:	e8 63 b3 16 00       	call   0x1032757d
+101bc21a:	8b 4d f8             	mov    ecx,DWORD PTR [ebp-0x8]
+101bc21d:	83 c4 04             	add    esp,0x4
+101bc220:	88 04 0e             	mov    BYTE PTR [esi+ecx*1],al
+101bc223:	46                   	inc    esi
+101bc224:	3b f7                	cmp    esi,edi
+101bc226:	75 e8                	jne    0x101bc210
+101bc228:	8b 75 f4             	mov    esi,DWORD PTR [ebp-0xc]
+101bc22b:	8d 45 08             	lea    eax,[ebp+0x8]
+101bc22e:	50                   	push   eax
+101bc22f:	8b ce                	mov    ecx,esi
+101bc231:	e8 ea f3 e6 ff       	call   0x1002b620
+101bc236:	3b 06                	cmp    eax,DWORD PTR [esi]
+101bc238:	5f                   	pop    edi
+101bc239:	5e                   	pop    esi
+101bc23a:	5b                   	pop    ebx
+101bc23b:	74 36                	je     0x101bc273
+101bc23d:	83 78 24 10          	cmp    DWORD PTR [eax+0x24],0x10
+101bc241:	8d 48 10             	lea    ecx,[eax+0x10]
+101bc244:	8b d1                	mov    edx,ecx
+101bc246:	72 02                	jb     0x101bc24a
+101bc248:	8b 11                	mov    edx,DWORD PTR [ecx]
+101bc24a:	ff 71 10             	push   DWORD PTR [ecx+0x10]
+101bc24d:	83 7d 1c 10          	cmp    DWORD PTR [ebp+0x1c],0x10
+101bc251:	8d 45 08             	lea    eax,[ebp+0x8]
+101bc254:	52                   	push   edx
+101bc255:	0f 43 45 08          	cmovae eax,DWORD PTR [ebp+0x8]
+101bc259:	ff 75 18             	push   DWORD PTR [ebp+0x18]
+101bc25c:	50                   	push   eax
+101bc25d:	e8 8e ef e6 ff       	call   0x1002b1f0
+101bc262:	83 c4 10             	add    esp,0x10
+101bc265:	85 c0                	test   eax,eax
+101bc267:	78 0a                	js     0x101bc273
+101bc269:	f3 0f 10 05 c0 a7 41 	movss  xmm0,DWORD PTR ds:0x1041a7c0
+101bc270:	10 
+101bc271:	eb 03                	jmp    0x101bc276
+101bc273:	0f 57 c0             	xorps  xmm0,xmm0
+101bc276:	8d 4d 08             	lea    ecx,[ebp+0x8]
+101bc279:	f3 0f 11 45 f8       	movss  DWORD PTR [ebp-0x8],xmm0
+101bc27e:	e8 5d f9 e5 ff       	call   0x1001bbe0
+101bc283:	8b 4d fc             	mov    ecx,DWORD PTR [ebp-0x4]
+101bc286:	f3 0f 10 45 f8       	movss  xmm0,DWORD PTR [ebp-0x8]
+101bc28b:	33 cd                	xor    ecx,ebp
+101bc28d:	e8 9b bf 15 00       	call   0x1031822d
+101bc292:	8b e5                	mov    esp,ebp
+101bc294:	5d                   	pop    ebp
+101bc295:	c3                   	ret

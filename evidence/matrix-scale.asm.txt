@@ -1,0 +1,149 @@
+
+resources\plugins\ases\ia32\win32\lsx-ases.dll:     file format pei-i386
+
+
+Disassembly of section .text:
+
+1004bc80 <.text+0x4ac80>:
+1004bc80:	55                   	push   ebp
+1004bc81:	8b ec                	mov    ebp,esp
+1004bc83:	51                   	push   ecx
+1004bc84:	0f 28 c1             	movaps xmm0,xmm1
+1004bc87:	0f 2e 05 c0 a7 41 10 	ucomiss xmm0,DWORD PTR ds:0x1041a7c0 ; 0x1041a7c0 f32=1.0
+1004bc8e:	56                   	push   esi
+1004bc8f:	8b f1                	mov    esi,ecx
+1004bc91:	f3 0f 11 45 fc       	movss  DWORD PTR [ebp-0x4],xmm0
+1004bc96:	9f                   	lahf
+1004bc97:	f6 c4 44             	test   ah,0x44
+1004bc9a:	7b 5b                	jnp    0x1004bcf7
+1004bc9c:	8b 4e 08             	mov    ecx,DWORD PTR [esi+0x8]
+1004bc9f:	85 c9                	test   ecx,ecx
+1004bca1:	74 54                	je     0x1004bcf7
+1004bca3:	8b 46 04             	mov    eax,DWORD PTR [esi+0x4]
+1004bca6:	57                   	push   edi
+1004bca7:	8b 3e                	mov    edi,DWORD PTR [esi]
+1004bca9:	3b 46 0c             	cmp    eax,DWORD PTR [esi+0xc]
+1004bcac:	75 1b                	jne    0x1004bcc9
+1004bcae:	6a 01                	push   0x1
+1004bcb0:	0f af c1             	imul   eax,ecx
+1004bcb3:	57                   	push   edi
+1004bcb4:	51                   	push   ecx
+1004bcb5:	f3 0f 11 04 24       	movss  DWORD PTR [esp],xmm0
+1004bcba:	50                   	push   eax
+1004bcbb:	e8 90 53 fb ff       	call   0x10001050
+1004bcc0:	83 c4 10             	add    esp,0x10
+1004bcc3:	5f                   	pop    edi
+1004bcc4:	5e                   	pop    esi
+1004bcc5:	8b e5                	mov    esp,ebp
+1004bcc7:	5d                   	pop    ebp
+1004bcc8:	c3                   	ret
+1004bcc9:	53                   	push   ebx
+1004bcca:	33 db                	xor    ebx,ebx
+1004bccc:	85 c9                	test   ecx,ecx
+1004bcce:	7e 25                	jle    0x1004bcf5
+1004bcd0:	6a 01                	push   0x1
+1004bcd2:	57                   	push   edi
+1004bcd3:	51                   	push   ecx
+1004bcd4:	f3 0f 11 04 24       	movss  DWORD PTR [esp],xmm0
+1004bcd9:	ff 76 04             	push   DWORD PTR [esi+0x4]
+1004bcdc:	e8 6f 53 fb ff       	call   0x10001050
+1004bce1:	8b 46 0c             	mov    eax,DWORD PTR [esi+0xc]
+1004bce4:	43                   	inc    ebx
+1004bce5:	f3 0f 10 45 fc       	movss  xmm0,DWORD PTR [ebp-0x4]
+1004bcea:	83 c4 10             	add    esp,0x10
+1004bced:	8d 3c 87             	lea    edi,[edi+eax*4]
+1004bcf0:	3b 5e 08             	cmp    ebx,DWORD PTR [esi+0x8]
+1004bcf3:	7c db                	jl     0x1004bcd0
+1004bcf5:	5b                   	pop    ebx
+1004bcf6:	5f                   	pop    edi
+1004bcf7:	5e                   	pop    esi
+1004bcf8:	8b e5                	mov    esp,ebp
+1004bcfa:	5d                   	pop    ebp
+1004bcfb:	c3                   	ret
+1004bcfc:	cc                   	int3
+1004bcfd:	cc                   	int3
+1004bcfe:	cc                   	int3
+1004bcff:	cc                   	int3
+1004bd00:	55                   	push   ebp
+1004bd01:	8b ec                	mov    ebp,esp
+1004bd03:	53                   	push   ebx
+1004bd04:	56                   	push   esi
+1004bd05:	8b f1                	mov    esi,ecx
+1004bd07:	33 db                	xor    ebx,ebx
+1004bd09:	39 5e 08             	cmp    DWORD PTR [esi+0x8],ebx
+1004bd0c:	7e 3d                	jle    0x1004bd4b
+1004bd0e:	8b 46 04             	mov    eax,DWORD PTR [esi+0x4]
+1004bd11:	57                   	push   edi
+1004bd12:	33 d2                	xor    edx,edx
+1004bd14:	85 c0                	test   eax,eax
+1004bd16:	7e 2c                	jle    0x1004bd44
+1004bd18:	8b 45 08             	mov    eax,DWORD PTR [ebp+0x8]
+1004bd1b:	8b 38                	mov    edi,DWORD PTR [eax]
+1004bd1d:	0f 1f 00             	nop    DWORD PTR [eax]
+1004bd20:	8b 4e 0c             	mov    ecx,DWORD PTR [esi+0xc]
+1004bd23:	8d 7f 04             	lea    edi,[edi+0x4]
+1004bd26:	8b 06                	mov    eax,DWORD PTR [esi]
+1004bd28:	0f af cb             	imul   ecx,ebx
+1004bd2b:	03 ca                	add    ecx,edx
+1004bd2d:	42                   	inc    edx
+1004bd2e:	f3 0f 10 04 88       	movss  xmm0,DWORD PTR [eax+ecx*4]
+1004bd33:	f3 0f 59 47 fc       	mulss  xmm0,DWORD PTR [edi-0x4]
+1004bd38:	f3 0f 11 04 88       	movss  DWORD PTR [eax+ecx*4],xmm0
+1004bd3d:	8b 46 04             	mov    eax,DWORD PTR [esi+0x4]
+1004bd40:	3b d0                	cmp    edx,eax
+1004bd42:	7c dc                	jl     0x1004bd20
+1004bd44:	43                   	inc    ebx
+1004bd45:	3b 5e 08             	cmp    ebx,DWORD PTR [esi+0x8]
+1004bd48:	7c c8                	jl     0x1004bd12
+1004bd4a:	5f                   	pop    edi
+1004bd4b:	5e                   	pop    esi
+1004bd4c:	5b                   	pop    ebx
+1004bd4d:	5d                   	pop    ebp
+1004bd4e:	c2 04 00             	ret    0x4
+1004bd51:	cc                   	int3
+1004bd52:	cc                   	int3
+1004bd53:	cc                   	int3
+1004bd54:	cc                   	int3
+1004bd55:	cc                   	int3
+1004bd56:	cc                   	int3
+1004bd57:	cc                   	int3
+1004bd58:	cc                   	int3
+1004bd59:	cc                   	int3
+1004bd5a:	cc                   	int3
+1004bd5b:	cc                   	int3
+1004bd5c:	cc                   	int3
+1004bd5d:	cc                   	int3
+1004bd5e:	cc                   	int3
+1004bd5f:	cc                   	int3
+1004bd60:	55                   	push   ebp
+1004bd61:	8b ec                	mov    ebp,esp
+1004bd63:	83 ec 0c             	sub    esp,0xc
+1004bd66:	53                   	push   ebx
+1004bd67:	56                   	push   esi
+1004bd68:	8b f1                	mov    esi,ecx
+1004bd6a:	57                   	push   edi
+1004bd6b:	33 ff                	xor    edi,edi
+1004bd6d:	8b 46 08             	mov    eax,DWORD PTR [esi+0x8]
+1004bd70:	8b 5e 04             	mov    ebx,DWORD PTR [esi+0x4]
+1004bd73:	89 45 f4             	mov    DWORD PTR [ebp-0xc],eax
+1004bd76:	89 5d f8             	mov    DWORD PTR [ebp-0x8],ebx
+1004bd79:	85 c0                	test   eax,eax
+1004bd7b:	0f 8e cf 00 00 00    	jle    0x1004be50
+1004bd81:	8b 45 08             	mov    eax,DWORD PTR [ebp+0x8]
+1004bd84:	8b 00                	mov    eax,DWORD PTR [eax]
+1004bd86:	89 45 08             	mov    DWORD PTR [ebp+0x8],eax
+1004bd89:	0f 1f 80 00 00 00 00 	nop    DWORD PTR [eax+0x0]
+1004bd90:	f3 0f 10 08          	movss  xmm1,DWORD PTR [eax]
+1004bd94:	33 d2                	xor    edx,edx
+1004bd96:	83 fb 04             	cmp    ebx,0x4
+1004bd99:	7c 7b                	jl     0x1004be16
+1004bd9b:	8d 43 fd             	lea    eax,[ebx-0x3]
+1004bd9e:	89 45 fc             	mov    DWORD PTR [ebp-0x4],eax
+1004bda1:	8b d8                	mov    ebx,eax
+1004bda3:	8b 4e 0c             	mov    ecx,DWORD PTR [esi+0xc]
+1004bda6:	8b 06                	mov    eax,DWORD PTR [esi]
+1004bda8:	0f af cf             	imul   ecx,edi
+1004bdab:	03 ca                	add    ecx,edx
+1004bdad:	f3                   	repz
+1004bdae:	0f                   	.byte 0xf
+1004bdaf:	10                   	.byte 0x10
